@@ -1,0 +1,33 @@
+.wu-inpwrap{
+   position: relative;
+
+   input[type='input'],
+   .wu-inp{
+      display: inline-block;
+      width: 100%;
+      border: 1px solid $color-black2;
+      border-radius: 15px;
+      padding: $spacer-2 $spacer-4;
+      
+      &:valid + .wu-label,
+      &:focus + .wu-label
+      {
+         top: -7px;
+         font-size: 12px;
+         background-color: $color-white;
+      }
+   }
+
+   label,
+   .wu-label{
+      position: absolute;
+      left: $spacer-4;
+      top: 8px;
+      font-weight: 400;
+      transition: all 0.2s ease;
+      padding: $spacer-0 $spacer-1;
+      color: rgba(157, 157, 157, 1);
+      pointer-events: none;
+   }
+}
+

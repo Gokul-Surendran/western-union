@@ -1,0 +1,29 @@
+input[type='radio'],
+.wu-radio{
+   appearance: none;
+   position: relative;
+   display: inline-block;
+   width: 19px;
+   height: 19px;
+   border-radius: 50%;
+   border: 1px solid $color-black2;
+
+   &::after{
+      content: '';
+      position: absolute;
+      display: inline-block;
+      top: 50%;
+      left: 50%;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      opacity: 0;
+      transform: translate(-50%, -50%);
+      background-color: $color-black2;
+      transition: all 0.3s ease;
+   }
+
+   &:checked::after{
+      opacity: 1;
+   }
+}

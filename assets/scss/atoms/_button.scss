@@ -1,0 +1,15 @@
+.wu-btn{
+   position: relative;
+   display: inline-block;
+   color: $color-black2;
+   background-color: $color-yellow;
+   user-select: none;
+   cursor: pointer;
+   border-radius: 20px;
+   padding: $spacer-2 $spacer-5;
+
+   &--black{
+      color: $color-yellow;
+      background-color: $color-black2;
+   }
+}
