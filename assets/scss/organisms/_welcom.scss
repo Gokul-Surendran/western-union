@@ -1,0 +1,81 @@
+.wu-welcome{
+    width: 100%;
+    &__hero{
+        width: 100%;
+        position: relative;
+        &_dec{
+            position: absolute;
+            top: 0;
+            left: -10%;
+
+            img{
+                width: 100%;
+            }
+        }
+        &_top{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img{
+                width: 100%;
+            }
+        }
+        &_bottom{
+            width: 100%;
+            text-align: center;
+            margin-bottom: $spacer-3;
+        }
+    }
+    &__title{
+        font-size: 30px;
+        font-weight: $font-medium;
+        color: $color-black2;
+        margin: $spacer-2 $spacer-0;
+    }
+    &__text{
+        font-size: 16px;
+        color: $color-black2;
+        &--b{
+            font-weight: $font-semi-bold;
+        }
+    }
+    &__btn-wrap{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: $spacer-2;
+        .wu-btn{
+            width: calc(50% - $spacer-3);
+            margin-left: $spacer-2;
+            margin-right: $spacer-2;
+        }
+    }
+    &__block{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: $spacer-3 $spacer-0;
+
+        &_cnt{
+            width: 55%;
+            .wu-sub-title{
+                margin-bottom: $spacer-1;
+            }
+        }
+        &__img{
+            width: 40%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img,
+            svg{
+                width: 100%;
+            }
+        }
+
+        &--rev{
+            flex-direction: row-reverse;
+        }
+    }
+}
