@@ -1,9 +1,10 @@
 .wu-footer {
     width: 100%;
     height: auto;
+    display: flex;
 
     &__img {
         width: 100%;
-        height: auto;
+        height: 100%;
     }
 }
