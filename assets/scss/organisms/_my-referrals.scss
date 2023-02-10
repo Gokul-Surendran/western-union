@@ -1,0 +1,48 @@
+.wu-referrals {
+    &__head {
+        text-align: center;
+
+        .wu-title {
+            margin-bottom: $spacer-2;
+        }
+    }
+
+    &__body {
+        margin: $spacer-4 0;
+        background-color: $color-grey2;
+        padding: $spacer-3;
+    }
+
+    &__tile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__tiletitle {
+        font-size: 80px;
+        color: $color-grey;
+    }
+
+    &__tiledesc {
+        max-width: 70%;
+        font-size: 20px;
+        color: $color-grey;
+        font-weight: $font-semi-bold;
+
+        span {
+            color: $color-black;
+        }
+    }
+
+    &__tileimg {
+        margin-top: $spacer-3;
+        width: 175px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+}
