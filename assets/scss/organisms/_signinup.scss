@@ -1,0 +1,33 @@
+.wu-signinup{
+   .wu-title{
+      text-align: center;
+      margin-bottom: $spacer-5;
+   }
+   &__act{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .wu-btn{
+         width: 200px;
+      }
+   }
+   &__tnc{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .wu-checkbox{
+         margin-right: $spacer-3;
+      }
+      .wu-label{
+         cursor: pointer;
+         a{
+            font-weight: 600;
+            color: $color-black2;
+            &:hover{
+               text-decoration: underline;
+            }
+         }
+      }
+   }
+}
