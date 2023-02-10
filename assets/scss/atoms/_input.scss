@@ -1,5 +1,6 @@
 .wu-inpwrap{
    position: relative;
+   margin: $spacer-4 0;
 
    input[type='input'],
    .wu-inp{
@@ -8,6 +9,7 @@
       border: 1px solid $color-black2;
       border-radius: 15px;
       padding: $spacer-2 $spacer-4;
+      height: 44px;
       
       &:valid + .wu-label,
       &:focus + .wu-label
@@ -22,7 +24,7 @@
    .wu-label{
       position: absolute;
       left: $spacer-4;
-      top: 8px;
+      top: 12px;
       font-weight: 400;
       transition: all 0.2s ease;
       padding: $spacer-0 $spacer-1;
