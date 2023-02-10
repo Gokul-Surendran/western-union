@@ -8,6 +8,7 @@
 @import "./base/dev";
 
 // atoms
+@import "./atoms/separator";
 @import "./atoms/button";
 @import "./atoms/radio";
 @import "./atoms/input";
@@ -17,7 +18,8 @@
 // molecule
 
 // organisms
-@import "./organisms/welcom";
+@import "./organisms/welcome";
+@import "./organisms/signinup";
 @import "./organisms/footer";
 @import "./organisms/ramdan-rewards";
 @import "./organisms/my-referrals";
