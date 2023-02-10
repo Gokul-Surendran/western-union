@@ -1,0 +1,114 @@
+.wu-rewards {
+    background-color: $color-yellow;
+    overflow: hidden;
+    padding-bottom: $spacer-6;
+
+    &__main {
+        display: flex;
+        position: relative;
+    }
+
+    &__text {
+        padding: $spacer-4 0;
+        width: 60%
+    }
+
+    &__subtitle {
+        font-size: 18px;
+        font-weight: $font-bold;
+        margin-bottom: $spacer-2;
+    }
+
+    &__title {
+        font-size: 28px;
+        font-weight: $font-bold;
+    }
+
+    &__img {
+        // position: absolute;
+        // right: 0;
+        // top: 0;
+        width: 60%;
+        height: 100%;
+        transform: translateX(-30px);
+
+        img {
+            width: 120%;
+        }
+    }
+
+    &__coupon {
+        padding: $spacer-4 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    &__coupon-text {
+        font-size: 15px;
+        font-weight: $font-semi-bold;
+        text-align: center;
+        width: 80%;
+        margin-bottom: $spacer-3;
+    }
+
+    &__coupon-wrap {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__coupon-tile {
+        width: 40%;
+        padding: $spacer-3;
+        text-align: center;
+        border: 2px solid $color-black;
+        margin: 0 $spacer-1;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 4px;
+            height: 70%;
+            left: -3px;
+            top: 15%;
+            background-color: $color-yellow;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 4px;
+            height: 70%;
+            right: -3px;
+            top: 15%;
+            background-color: $color-yellow;
+        }
+
+        p {
+            font-size: 15px;
+            font-weight: $font-semi-bold;
+        }
+
+        h3 {
+            font-size: 40px;
+            font-weight: $font-semi-bold;
+        }
+    }
+
+    &__coupon-coins {
+        position: absolute;
+        width: 100px;
+        right: 30px;
+        bottom: -35px;
+    }
+
+    &__coupon-btn {
+        margin-top: $spacer-5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
