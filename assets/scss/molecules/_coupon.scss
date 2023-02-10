@@ -1,0 +1,133 @@
+.wu-coupon{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1E1E1E;
+    text-decoration: none;
+    padding: $spacer-3;
+    &__left{
+        width: 35%;
+        background-color: transparent;
+        border: 2px solid $color-yellow;
+        padding: 12px;
+        position: relative;
+
+        &::after,
+        &::before{
+            content: "";
+            position: absolute;
+            width: 4px;
+            height: 60%;
+            background-color: #1E1E1E;
+            top: 20%;
+            left: -3px;
+        }
+        &::before{
+            left: unset;
+            right: -3px;
+        }
+    }
+    &__img{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img{
+            width: 100%;
+        }
+    }
+    &__share{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        right: -12px;
+        top: 50%;
+        width: 16px;
+        height: 16px;
+        transform: translateY(-50%);
+        img,
+        svg{
+            width: 100%;
+        }
+    }
+
+    &__right{
+        flex: 1;
+        padding: $spacer-2;
+        text-align: center;
+        position: relative;
+
+        &_arrow{
+            width: 10px;
+            height: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            svg{
+                width: 100%;
+            }
+        }
+    }
+
+    &__status{
+        font-size: 16px;
+        font-weight: $font-medium;
+        line-height: 18px;
+        color: $color-grey;
+        text-transform: uppercase;
+        display: none;
+    }
+
+    &__price{
+        font-size: 60px;
+        line-height: 61px;
+        color: $color-grey;
+    }
+
+    &__transac{
+        font-size: 14px;
+        color: $color-grey;
+    }
+
+    &__valid{
+        font-size: 12px;
+        color: #B0A7B0;
+    }
+
+    &--redeemed{
+        background-color: $color-white2;
+        .wu-coupon__left{
+            border: 2px solid $color-white;
+
+            &::after,
+            &::before{
+                background-color: $color-white2;
+            }
+        }
+
+        .wu-coupon__status{
+            display: block;
+        }
+        .wu-coupon__price,
+        .wu-coupon__transac,
+        .wu-coupon__valid{
+            color: #D9D9D9;
+        }
+
+        .wu-coupon__right{
+            &_arrow{
+                svg{
+                    path{
+                        fill: #D9D9D9;
+                    }
+                }
+            }   
+        }
+    }
+}
