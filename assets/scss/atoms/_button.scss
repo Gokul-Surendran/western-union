@@ -1,4 +1,4 @@
-.wu-btn{
+.wu-btn {
    position: relative;
    display: inline-block;
    color: $color-black2;
@@ -9,8 +9,22 @@
    height: 44px;
    padding: $spacer-2 $spacer-5;
 
-   &--black{
+   &--black {
       color: $color-yellow;
       background-color: $color-black2;
+   }
+
+   &--arrow {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      // height: 40px;
+      font-weight: $font-semi-bold;
+
+      svg {
+         width: 15px;
+         height: 15px;
+         margin-left: $spacer-1;
+      }
    }
 }

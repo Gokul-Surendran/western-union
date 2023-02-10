@@ -1,6 +1,10 @@
-.wu-separator{
+.wu-separator {
    display: block;
    height: 1px;
    width: 100%;
    background-color: $color-grey;
+
+   &--white {
+      background-color: $color-white;
+   }
 }
