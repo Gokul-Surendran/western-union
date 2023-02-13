@@ -1,0 +1,17 @@
+.wu-luckydraw {
+    .wu-referrals__body {
+        padding: 0;
+        background-color: transparent;
+    }
+
+    &__body {
+        display: flex;
+        flex-wrap: wrap;
+        margin: $spacer-3 -0.5px;
+
+        .wu-lucky__card {
+            width: calc(50% - 1px);
+            margin: 0.5px;
+        }
+    }
+}
