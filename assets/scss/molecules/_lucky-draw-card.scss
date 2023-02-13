@@ -1,0 +1,25 @@
+.wu-lucky__card{
+    width: 100%;
+    border: 0.1px solid $color-grey;
+    padding: $spacer-4 $spacer-3;
+    text-decoration: none;
+    &_img{
+        width: 100%;
+        min-height: 160px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: $spacer-2;
+        img{
+            width: 100%;
+        }
+    }
+
+    &_text{
+        font-size: 14px;
+        font-weight: $font-medium;
+        color: $color-grey;
+        text-align: center;
+        min-height: 42px;
+    }
+}
