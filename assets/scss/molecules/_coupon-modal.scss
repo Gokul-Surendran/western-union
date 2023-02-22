@@ -1,0 +1,16 @@
+.wu-modal {
+    &__body {
+        padding: $spacer-6 $spacer-4;
+
+        .wu-coupon__left {
+            width: 100%;
+            padding: $spacer-5;
+
+            &::after,
+            &::before {
+                background-color: $color-white;
+            }
+        }
+
+    }
+}
