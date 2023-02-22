@@ -21,7 +21,7 @@
     }
 
     &__title {
-        font-size: 28px;
+        font-size: 30px;
         font-weight: $font-bold;
     }
 
@@ -53,7 +53,7 @@
 
     &__coupon-text {
         font-size: 15px;
-        font-weight: $font-semi-bold;
+        // font-weight: $font-semi-bold;
         text-align: center;
         width: 80%;
         margin-bottom: $spacer-3;
@@ -94,12 +94,12 @@
 
         p {
             font-size: 15px;
-            font-weight: $font-semi-bold;
+            // font-weight: $font-semi-bold;
         }
 
         h3 {
-            font-size: 40px;
-            font-weight: $font-semi-bold;
+            font-size: 45px;
+            // font-weight: $font-semi-bold;
         }
     }
 
@@ -111,7 +111,7 @@
     }
 
     &__coupon-btn {
-        margin: $spacer-5 0;
+        margin: $spacer-6 0;
         display: flex;
         align-items: center;
         justify-content: center;
