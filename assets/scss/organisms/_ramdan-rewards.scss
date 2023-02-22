@@ -1,9 +1,10 @@
 .wu-rewards {
     background-color: $color-yellow;
-    overflow: hidden;
     padding-bottom: $spacer-6;
+    height: calc(100vh - 50px);
 
     &__main {
+        overflow: hidden;
         display: flex;
         position: relative;
     }
@@ -35,6 +36,10 @@
         img {
             width: 120%;
         }
+    }
+
+    &__coupon-wrap {
+        background-color: $color-yellow;
     }
 
     &__coupon {
@@ -106,7 +111,7 @@
     }
 
     &__coupon-btn {
-        margin-top: $spacer-5;
+        margin: $spacer-5 0;
         display: flex;
         align-items: center;
         justify-content: center;
