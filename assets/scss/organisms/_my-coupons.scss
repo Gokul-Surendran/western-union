@@ -1,5 +1,10 @@
 .wu-my-coupons {
     &__body {
+        &.wu-referrals__body {
+            background-color: transparent;
+            padding: 0;
+        }
+
         .wu-coupon {
             margin-bottom: $spacer-3;
         }
