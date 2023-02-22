@@ -1,58 +1,68 @@
-.wu-yes{
+.wu-yes {
    display: flex;
    flex-direction: column;
    min-height: 100vh;
+   position: relative;
 
-   &__ormimg{
+   &__ormimg {
       position: absolute;
       right: 0px;
-      top: -24px;
+      top: -35px;
       width: 110px;
    }
 
-   &__content{
-      padding-top: calc($spacer-5 + $spacer-4) ;
+   &__content {
+      padding-top: calc($spacer-5 + $spacer-4);
    }
-   
-   .wu-title{
+
+   .wu-title {
       text-align: center;
       margin-bottom: $spacer-2;
    }
-   .wu-para{
+
+   .wu-para {
       text-align: center;
-      &--bm{
+
+      &--bm {
          margin-bottom: $spacer-2;
       }
-  }
-  &__act{
+   }
+
+   &__act {
       display: flex;
       align-items: center;
       justify-content: center;
 
-      .wu-btn{
+      .wu-btn {
          width: 200px;
       }
    }
-   &__tnc{
+
+   &__tnc {
       display: flex;
       align-items: center;
       justify-content: center;
       margin-bottom: $spacer-3;
-      .wu-checkbox{
+
+      .wu-checkbox {
          margin-right: $spacer-2;
       }
-      .wu-label{
+
+      .wu-label {
          cursor: pointer;
-         a{
+
+         a {
             font-weight: 600;
             color: $color-black2;
-            &:hover{
+
+            &:hover {
                text-decoration: underline;
             }
          }
       }
    }
-   .wu-footer{
+
+   .wu-footer {
       margin-top: auto;
    }
 }
