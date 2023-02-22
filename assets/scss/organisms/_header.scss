@@ -1,0 +1,25 @@
+.wu-header {
+  background-color: $color-black;
+  &__logo {
+    max-width: 120px;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .container-fluid {
+    padding: 0;
+  }
+  .navbar-light .navbar-brand {
+    color: $color-white;
+  }
+  .navbar-light .navbar-toggler-icon {
+    background-image: url("../images/hamburg-white.svg");
+  }
+  .navbar-toggler {
+    padding: 0;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    color: $color-white;
+  }
+}
