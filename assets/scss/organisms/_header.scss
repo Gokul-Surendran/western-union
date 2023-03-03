@@ -3,14 +3,44 @@
   z-index: 1;
   position: relative;
 
+  .navbar{
+    padding: $spacer-6 $spacer-0;
+  }
+
   &__logo {
-    max-width: 140px;
+    max-width: 200px;
     padding: 0;
 
     img {
       width: 100%;
       height: auto;
     }
+  }
+
+  .nav-item{
+    margin: 0 $spacer-2;
+    position: relative;
+
+    &::after{
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      transition: all 0.3s ease-in-out;
+      background-color: $color-yellow;
+    }
+
+    &:hover{
+      &::after{
+        width: 100%;
+      }
+    }
+  }
+
+  .nav-link{
+    font-size: 20px;
   }
 
   .container-fluid {
@@ -23,6 +53,8 @@
 
   .navbar-light .navbar-toggler-icon {
     background-image: url("../images/hamburg-white.svg");
+    width: 2.5rem;
+    height: 2.5rem;
   }
 
   .navbar-toggler {
@@ -31,5 +63,79 @@
 
   .navbar-light .navbar-nav .nav-link {
     color: $color-white;
+  }
+
+  // for login page
+  &--yellow{
+    background-color: $color-yellow;
+
+    .navbar-light .navbar-nav {
+      .nav-link{
+        color: $color-black;
+      }
+    }
+    .navbar-light .navbar-toggler-icon {
+      background-image: url("../images/hamburg-black.svg");
+    }
+  }
+}
+
+@include mobile-tablet{
+  .wu-header{
+    .navbar{
+      padding: $spacer-5 $spacer-0;
+    }
+    .navbar-nav{
+      padding: $spacer-3 $spacer-0;
+      margin-bottom: 0 !important;
+    }
+    .nav-item{
+      &::after{
+        content: none;
+      }
+    }
+    .navbar-toggler{
+      outline: none;
+      border: none;
+      box-shadow: none;
+      &:focus{
+        outline: none;
+        border: none;
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+@include mobile{
+  .wu-header{
+    background-color: $color-white;
+    .navbar{
+      padding: $spacer-3 $spacer-0;
+    }
+
+    &__logo{
+      max-width: 65px;
+    }
+
+    .navbar-light .navbar-toggler-icon {
+      background-image: url("../images/hamburg-black.svg");
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+
+    .navbar-light .navbar-nav{
+      .nav-link{
+        color: $color-black;
+      }
+    }
+
+    &--yellow{
+      background-color: transparent;
+
+      .navbar-light .navbar-toggler-icon {
+        background-image: url("../images/hamburg-yellow.svg");
+      }
+    }
   }
 }
