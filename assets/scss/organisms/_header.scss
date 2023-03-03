@@ -131,10 +131,16 @@
     }
 
     &--yellow{
-      background-color: transparent;
+      background-color: $color-black;
 
       .navbar-light .navbar-toggler-icon {
         background-image: url("../images/hamburg-yellow.svg");
+      }
+
+      .navbar-light .navbar-nav{
+        .nav-link{
+          color: $color-white;
+        }
       }
     }
   }
