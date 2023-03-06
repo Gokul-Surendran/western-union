@@ -1,32 +1,40 @@
-.wu-tab{
+.wu-tab {
     width: 100%;
 
-    .nav.nav-pills{
-        justify-content: space-between;
-        padding-bottom: $spacer-2;  
-        background-color: $color-white2; 
-        margin-bottom: $spacer-3;
+    &__outer {
+        display: flex;
+        align-items: center;
+        border-bottom: 2px solid $color-grey;
     }
 
-    .nav-item{
-       
-        .nav-link{
-            font-size: 16px;
-            font-weight: $font-medium;
-            color: $color-grey;
-            background-color: transparent;
-            &.active{
-                position: relative;
-                &::after{
-                    content: "";
-                    position: absolute;
-                    bottom: -8px;
-                    left: 0;
-                    width: 100%;
-                    height: 2px;
-                    background-color: $color-yellow;
-                }
-        
+    &__link {
+        display: block;
+        padding: $spacer-2 $spacer-5;
+        font-size: 20px;
+        font-weight: $font-medium;
+        color: $color-grey;
+        white-space: nowrap;
+        margin: 0 $spacer-2;
+        transition: 0.3s;
+
+        &:hover {
+            color: $color-black;
+            border-color: $color-black;
+            transition: 0.3s;
+        }
+
+        &--active {
+            color: $color-black;
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                height: 2px;
+                width: 100%;
+                background-color: $color-black;
+                left: 0;
+                bottom: -2px;
             }
         }
     }
