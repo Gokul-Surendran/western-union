@@ -2,9 +2,22 @@
     width: 100%;
     height: auto;
     display: flex;
+    background-color: $color-black;
+    padding: $spacer-4;
+    // &__img {
+    //     width: 100%;
+    //     height: 100%;
+    // }
+}
 
-    &__img {
-        width: 100%;
-        height: 100%;
+@include tablet{
+    .wu-footer{
+        padding: $spacer-2;
+    }
+}
+
+@include mobile{
+    .wu-footer{
+        padding: $spacer-2;
     }
 }
