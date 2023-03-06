@@ -62,3 +62,16 @@
         }
     }
 }
+
+@include mobile {
+    .wu-tab {
+
+        &__outer {
+            justify-content: space-between;
+        }
+
+        &__link {
+            font-size: 18px;
+        }
+    }
+}

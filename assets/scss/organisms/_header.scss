@@ -3,7 +3,7 @@
   z-index: 1;
   position: relative;
 
-  .navbar{
+  .navbar {
     padding: $spacer-6 $spacer-0;
   }
 
@@ -17,11 +17,11 @@
     }
   }
 
-  .nav-item{
+  .nav-item {
     margin: 0 $spacer-2;
     position: relative;
 
-    &::after{
+    &::after {
       content: "";
       position: absolute;
       bottom: 0;
@@ -32,14 +32,14 @@
       background-color: $color-yellow;
     }
 
-    &:hover{
-      &::after{
+    &:hover {
+      &::after {
         width: 100%;
       }
     }
   }
 
-  .nav-link{
+  .nav-link {
     font-size: 20px;
   }
 
@@ -66,39 +66,44 @@
   }
 
   // for login page
-  &--yellow{
+  &--yellow {
     background-color: $color-yellow;
 
     .navbar-light .navbar-nav {
-      .nav-link{
+      .nav-link {
         color: $color-black;
       }
     }
+
     .navbar-light .navbar-toggler-icon {
       background-image: url("../images/hamburg-black.svg");
     }
   }
 }
 
-@include mobile-tablet{
-  .wu-header{
-    .navbar{
+@include mobile-tablet {
+  .wu-header {
+    .navbar {
       padding: $spacer-5 $spacer-0;
     }
-    .navbar-nav{
+
+    .navbar-nav {
       padding: $spacer-3 $spacer-0;
       margin-bottom: 0 !important;
     }
-    .nav-item{
-      &::after{
+
+    .nav-item {
+      &::after {
         content: none;
       }
     }
-    .navbar-toggler{
+
+    .navbar-toggler {
       outline: none;
       border: none;
       box-shadow: none;
-      &:focus{
+
+      &:focus {
         outline: none;
         border: none;
         box-shadow: none;
@@ -107,14 +112,15 @@
   }
 }
 
-@include mobile{
-  .wu-header{
-    background-color: $color-white;
-    .navbar{
+@include mobile {
+  .wu-header {
+    background-color: $color-grey2;
+
+    .navbar {
       padding: $spacer-3 $spacer-0;
     }
 
-    &__logo{
+    &__logo {
       max-width: 65px;
     }
 
@@ -124,21 +130,21 @@
       height: 1.5rem;
     }
 
-    .navbar-light .navbar-nav{
-      .nav-link{
+    .navbar-light .navbar-nav {
+      .nav-link {
         color: $color-black;
       }
     }
 
-    &--yellow{
+    &--yellow {
       background-color: $color-black;
 
       .navbar-light .navbar-toggler-icon {
         background-image: url("../images/hamburg-yellow.svg");
       }
 
-      .navbar-light .navbar-nav{
-        .nav-link{
+      .navbar-light .navbar-nav {
+        .nav-link {
           color: $color-white;
         }
       }
