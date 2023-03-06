@@ -6,7 +6,7 @@
 }
 
 .wu-sub-title {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: $font-medium;
     color: $color-black2;
     text-decoration: none;
@@ -17,5 +17,15 @@
 
     span {
         font-weight: $font-semi-bold;
+    }
+}
+
+@include mobile {
+    .wu-sub-title {
+        font-size: 20px;
+    }
+
+    .wu-para {
+        font-size: 14px;
     }
 }

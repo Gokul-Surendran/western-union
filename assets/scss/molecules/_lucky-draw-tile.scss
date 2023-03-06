@@ -1,79 +1,80 @@
-.wu-lucky-tile{
+.wu-lucky-tile {
     width: 100%;
     padding: $spacer-4;
     background-color: $color-white;
     border-radius: 16px;
     margin: $spacer-3 $spacer-0;
 
-    &__header{
+    &__header {
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
         margin-bottom: $spacer-2;
 
-        &-item{
+        &-item {
             width: 50%;
 
-            &:last-child{
-                .wu-lucky-tile__text{
+            &:last-child {
+                .wu-lucky-tile__text {
                     text-align: end;
                 }
             }
         }
     }
 
-    &__text{
+    &__text {
         font-size: 18px;
         color: $color-black;
         text-decoration: none;
         text-align: center;
         text-transform: capitalize;
 
-        &--large{
-            font-size: 22px;
+        &--large {
+            font-size: 20px;
             font-weight: $font-semi-bold;
         }
     }
 
-    &__card-wrap{
+    &__card-wrap {
         display: flex;
         align-items: center;
         justify-content: space-between;
 
-        .wu-lucky__card{
+        .wu-lucky__card {
             width: calc(50% - 16px);
         }
     }
 
 }
 
-@include mobile-tablet{
-    .wu-lucky-tile{
+@include mobile-tablet {
+    .wu-lucky-tile {
         padding: $spacer-3;
         border-radius: 14px;
 
-        &__text{
+        &__text {
             font-size: 16px;
 
-            &--large{
+            &--large {
                 font-size: 20px;
             }
         }
     }
 }
 
-@include mobile{
-    .wu-lucky-tile{
+@include mobile {
+    .wu-lucky-tile {
         margin: $spacer-2 $spacer-0;
-        .wu-lucky__card{
+
+        .wu-lucky__card {
             padding: $spacer-2;
         }
 
-        &__text{
+        &__text {
             font-size: 12px;
 
-            &--large{
-                font-size: 16px;
+            &--large {
+                font-size: 14px;
             }
         }
     }
