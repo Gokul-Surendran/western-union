@@ -1,11 +1,12 @@
 .wu-ccode-select{
    display: inline-block;
    width: 100%;
-   border: 1px solid $color-black2;
+   border: 1px solid $color-grey3;
    border-radius: 15px;
    height: 44px;
    padding: $spacer-2 $spacer-4;
    display: flex;
+   background-color: $color-white;
    
    &__select{
       position: relative;
