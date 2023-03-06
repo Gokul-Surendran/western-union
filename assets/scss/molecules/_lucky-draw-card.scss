@@ -1,10 +1,10 @@
 .wu-lucky__card{
     width: 100%;
-    border: 0.1px solid $color-grey;
-    padding: $spacer-4 $spacer-3;
+    padding: $spacer-3 $spacer-2;
     text-decoration: none;
     &_img{
         width: 100%;
+        height: 100%;
         min-height: 160px;
         display: flex;
         justify-content: center;
@@ -12,14 +12,25 @@
         margin-bottom: $spacer-2;
         img{
             width: 100%;
+            height: auto;
+            max-height: 200px;
+            object-fit: contain;
         }
     }
 
     &_text{
         font-size: 14px;
         font-weight: $font-medium;
-        color: $color-grey;
+        color: $color-black;
         text-align: center;
         min-height: 42px;
+    }
+}
+
+@include mobile{
+    .wu-lucky__card{
+        &_text{
+            font-size: 12px;
+        }
     }
 }
