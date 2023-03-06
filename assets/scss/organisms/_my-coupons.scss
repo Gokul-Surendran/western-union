@@ -1,12 +1,168 @@
 .wu-my-coupons {
-    &__body {
-        &.wu-referrals__body {
-            background-color: transparent;
-            padding: 0;
-        }
-
-        .wu-coupon {
-            margin-bottom: $spacer-3;
-        }
+  padding: $spacer-4 $spacer-0;
+  .wu-title {
+    padding-bottom: $spacer-3;
+  }
+  .wu-para {
+    padding-bottom: $spacer-4;
+  }
+  &__tile-wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__tile-outer {
+    width: calc(50% - 16px);
+    margin: $spacer-2;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    // min-height: 150px;
+  }
+  &__tile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $color-yellow;
+    padding: $spacer-3 $spacer-4 $spacer-3 $spacer-3;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    &--blue {
+      background-color: #94cbf2;
+      .wu-my-coupons__tile-desc {
+        color: $color-white;
+      }
     }
+    &--redeem {
+      background-color: #f5f5fa;
+      pointer-events: none;
+      opacity: 0.4;
+      // .wu-my-coupons__tile-head {
+      //   color: #cccccc;
+      // }
+      // .wu-my-coupons__tile-desc {
+      //   color: #d9d9d9;
+      // }
+    }
+  }
+  &__tile-black {
+    background-color: $color-black;
+    padding: $spacer-3 $spacer-4 $spacer-3 $spacer-3;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    transition: 0.3s;
+  }
+  &__tile-list {
+    color: $color-white;
+  }
+  &__inner-wrap {
+    display: flex;
+    align-items: center;
+    margin-right: $spacer-3;
+  }
+  &__qr {
+    width: 100px;
+    height: auto;
+    margin-right: $spacer-3;
+    img {
+      width: 100%;
+    }
+  }
+  &__tile-head {
+    font-size: 20px;
+    color: $color-black2;
+    font-weight: $font-medium;
+    padding-bottom: $spacer-2;
+  }
+  &__tile-desc {
+    font-size: 14px;
+    color: #808080;
+    font-weight: $font-medium;
+    max-width: 200px;
+  }
+  &__arrow-left,
+  &__arrow-right {
+    svg {
+      transition: 0.3s;
+    }
+    &:hover {
+      svg {
+        scale: 1.1;
+        transition: 0.3s;
+      }
+    }
+  }
+  &__tile-list {
+    width: 75%;
+    margin-right: $spacer-3;
+    font-style: italic;
+    font-size: 12px;
+    overflow-y: auto;
+    max-height: 115px;
+    li {
+      position: relative;
+      margin-left: $spacer-3;
+      margin-bottom: $spacer-1;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        border-radius: 50px;
+        background-color: $color-white;
+        top: 8px;
+        left: -16px;
+      }
+    }
+  }
+  .wu-my-coupons__tile-outer.show {
+    .wu-my-coupons__tile-black {
+      right: 0px;
+    }
+  }
+}
+@include tablet {
+  .wu-my-coupons {
+    &__tile-list {
+      max-height: 100px;
+    }
+  }
+}
+@include mobile {
+  .wu-my-coupons {
+    &__tile-wrap {
+      flex-direction: column;
+    }
+    &__tile-outer {
+      width: 100%;
+      margin: $spacer-0 $spacer-0 $spacer-3 $spacer-0;
+      padding: $spacer-0;
+      min-height: auto;
+    }
+    &__qr {
+      width: 80px;
+      height: auto;
+    }
+    &__tile-head {
+      font-size: 18px;
+    }
+    &__arrow-left,
+    &__arrow-right {
+      svg {
+        width: 25px;
+        height: 25px;
+      }
+    }
+    &__tile-list {
+      max-height: 80px;
+      width: 80%;
+    }
+  }
 }

@@ -1,17 +1,14 @@
-const coupons = document.querySelectorAll('.wu-coupon');
+var tiles = document.querySelectorAll(".wu-my-coupons__tile-outer");
 
-coupons.forEach((coupon) => {
-    coupon.querySelector('.wu-coupon__right_arrow').addEventListener('click', (e)=> {
-        if(e.currentTarget.classList.contains('wu-coupon__right_arrow')){
-            coupon.querySelector('.wu-coupon__hid').classList.add('wu-coupon__hid--active');
-        }
-    });
-});
-
-coupons.forEach((coupon) => {
-    coupon.querySelector('.wu-coupon__right_arrow--left').addEventListener('click', (e)=> {
-        if(e.currentTarget.classList.contains('wu-coupon__right_arrow--left')){
-            coupon.querySelector('.wu-coupon__hid').classList.remove('wu-coupon__hid--active');
-        }
-    });
+tiles.forEach((tile) => {
+  const btn_add = tile.querySelector(".wu-my-coupons__arrow-right");
+  const btn_remove = tile.querySelector(".wu-my-coupons__arrow-left");
+  btn_add.addEventListener("click", (e) => {
+    e.preventDefault();
+    tile.classList.add("show");
+  });
+  btn_remove.addEventListener("click", (e) => {
+    e.preventDefault();
+    tile.classList.remove("show");
+  });
 });
