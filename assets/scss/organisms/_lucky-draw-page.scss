@@ -1,11 +1,12 @@
 .wu-lucky-draw {
     &__head {
         padding: $spacer-4 $spacer-2;
+
+        .wu-sub-title {
+            margin-bottom: $spacer-2;
+        }
     }
 
-    .wu-sub-title {
-        margin-bottom: $spacer-2;
-    }
 
     &__tilewrap {
         display: flex;
