@@ -21,6 +21,7 @@
 @import "./molecules/lucky-draw-card";
 @import "./molecules/coupon-modal";
 @import "./molecules/share-modal";
+@import "./molecules/lucky-draw-tile";
 
 // organisms
 @import "./organisms/welcome";
@@ -33,4 +34,5 @@
 @import "./organisms/tab";
 @import "./organisms/my-coupons";
 @import "./organisms/yes";
+@import "organisms/lucky-draw-page";
 // pages
