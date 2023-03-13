@@ -12,3 +12,12 @@ tiles.forEach((tile) => {
     tile.classList.remove("show");
   });
 });
+
+// spinner
+const spinbtn = document.querySelector('.wu-spin-wheel__btn');
+const spinbody = document.querySelector('.wu-spin-wheel');
+
+
+spinbtn.addEventListener('click', () => {
+  spinbody.classList.add('wu-spin-wheel--spin')
+})

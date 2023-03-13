@@ -1,0 +1,286 @@
+.wu-spin-wheel {
+    background-color: $color-black;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+
+    &__bodybg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+
+        video {
+            width: 100%;
+            height: auto;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background-color: black;
+            opacity: 0.5;
+            z-index: 1;
+        }
+
+    }
+
+    &__outer {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        z-index: 2;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background-image: url('/assets/images/spin-wheel-yellow-bg.png');
+            background-position: inherit;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: 0.3s;
+        }
+    }
+
+    &__head {
+        position: relative;
+        width: 100%;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__close {
+        width: 30px;
+        height: 30px;
+        margin: 0 $spacer-4;
+
+        svg {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__logo {
+        width: 25%;
+        height: auto;
+        background-image: url('/assets/images/black-logo-bg.png');
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        padding: $spacer-6 $spacer-4;
+
+        // img {
+        //     width: 100%;
+        // }
+    }
+
+    &__body {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    &__left,
+    &__right {
+        width: 25%;
+        background-color: $color-white;
+        height: auto;
+        border-radius: 5px;
+        padding: $spacer-3;
+        text-align: center;
+    }
+
+    &__sidehead {
+        font-size: 20px;
+        font-weight: $font-semi-bold;
+        border-bottom: 1px solid $color-black;
+        padding-bottom: $spacer-3;
+
+        h4 {
+            font-size: 30px;
+            font-weight: $font-bold;
+        }
+    }
+
+    &__sidetext {
+        padding: $spacer-3 0;
+        font-size: 18px;
+        font-weight: $font-semi-bold;
+        text-align: left;
+    }
+
+    &__middle {
+        position: relative;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    &__pointer {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__spinner {
+        width: 300px;
+        height: 300px;
+        margin-bottom: $spacer-4;
+        animation-name: spin;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-delay: 1.5s;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__btn {
+        background-color: $color-yellow;
+        border-radius: 20px;
+        padding: $spacer-1 $spacer-3;
+        margin-top: $spacer-3;
+        cursor: pointer;
+        font-weight: $font-bold;
+        color: $color-black;
+        font-size: 22px;
+        border: 1px solid $color-yellow;
+        transition: 0.3s;
+        display: block;
+
+        &:hover {
+            color: $color-yellow;
+            background-color: transparent;
+            border: 1px solid $color-yellow;
+            transition: 0.3s;
+        }
+
+        &--modal {
+            display: none;
+        }
+    }
+
+    &__modal {
+        .modal-content {
+            background-color: $color-yellow;
+        }
+
+        .modal-footer {
+            border: 0;
+            display: flex;
+            justify-content: center;
+
+            .wu-spin-wheel__btn {
+                display: block;
+                background-color: $color-black;
+                color: $color-yellow;
+                border-color: $color-yellow;
+
+                &:hover {
+                    background-color: $color-yellow;
+                    border-color: $color-black;
+                    color: $color-black;
+                }
+            }
+        }
+    }
+
+    &--spin {
+        .wu-spin-wheel__bodybg {
+            video {
+                transform: scale(1.1);
+                transition: 0.9s;
+            }
+        }
+
+        .wu-spin-wheel__outer {
+            &::after {
+                transform: scale(3.1);
+                // left: -100%;
+                // top: -100%;
+                transition: 0.9s;
+            }
+        }
+
+        .wu-spin-wheel__close {
+            svg {
+                path {
+                    stroke: $color-white;
+                }
+            }
+        }
+
+        .wu-spin-wheel__spinner {
+            animation-duration: 1000ms;
+            transition: 0.9s;
+        }
+
+        .wu-spin-wheel__disc {
+            transform: scale(1.3) translateY(-40px);
+            transition: 0.3s;
+        }
+
+        .wu-spin-wheel__left {
+            opacity: 0;
+            transform: translateX(-200%);
+            transition: 0.3s;
+        }
+
+        .wu-spin-wheel__right {
+            opacity: 0;
+            transform: translateX(200%);
+            transition: 0.3s;
+        }
+
+        .wu-spin-wheel__btn {
+            display: none;
+        }
+
+        .wu-spin-wheel__btn--modal {
+            display: block;
+        }
+    }
+}
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+        animation-duration: 4000ms;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        animation-duration: 4000ms;
+    }
+}
