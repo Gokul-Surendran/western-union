@@ -61,8 +61,9 @@
     }
 
     &__close {
-        width: 30px;
-        height: 30px;
+        // width: 25px;
+        // height: 25px;
+        width: 2%;
         margin: 0 $spacer-4;
 
         svg {
@@ -82,9 +83,9 @@
         align-items: center;
         padding: $spacer-6 $spacer-4;
 
-        // img {
-        //     width: 100%;
-        // }
+        img {
+            width: 60%;
+        }
     }
 
     &__body {
@@ -95,6 +96,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        padding: 0 $spacer-6;
     }
 
 
@@ -109,7 +111,7 @@
     }
 
     &__sidehead {
-        font-size: 20px;
+        font-size: 24px;
         font-weight: $font-semi-bold;
         border-bottom: 1px solid $color-black;
         padding-bottom: $spacer-3;
@@ -125,6 +127,31 @@
         font-size: 18px;
         font-weight: $font-semi-bold;
         text-align: left;
+
+        p {
+            margin-bottom: $spacer-2;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__players {
+        margin-bottom: $spacer-2;
+
+        p {
+            margin-bottom: 0;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__date {
+        color: $color-grey;
+        font-weight: $font-medium;
     }
 
     &__middle {
@@ -190,17 +217,36 @@
         }
     }
 
+    // modal style
     &__modal {
+        .modal-dialog {
+            max-width: 600px;
+        }
+
         .modal-content {
-            background-color: $color-yellow;
+            background-color: transparent;
+            padding: $spacer-6;
+            position: relative;
+
+            .wu-spin-wheel__modalbg {
+                position: absolute;
+
+                video {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
         }
 
         .modal-footer {
+            position: relative;
+            padding-top: 0;
             border: 0;
             display: flex;
             justify-content: center;
 
             .wu-spin-wheel__btn {
+                margin-top: 0;
                 display: block;
                 background-color: $color-black;
                 color: $color-yellow;
@@ -213,8 +259,43 @@
                 }
             }
         }
+
+        .modal-body {
+            text-align: center;
+            font-size: 25px;
+        }
     }
 
+    &__congrts {
+        font-size: 30px;
+        font-weight: $font-medium;
+        margin-bottom: $spacer-2;
+    }
+
+    &__prize {
+        font-size: 25px;
+        font-weight: $font-semi-bold;
+        margin-bottom: $spacer-2;
+    }
+
+    &__winner {
+        font-size: 40px;
+        font-weight: $font-bold;
+        margin-bottom: $spacer-2;
+        font-family: 'PP Eiko Italic';
+        font-style: italic;
+    }
+
+    &__modalbg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: 0;
+    }
+
+    // spin class
     &--spin {
         .wu-spin-wheel__bodybg {
             video {
@@ -229,6 +310,7 @@
                 // left: -100%;
                 // top: -100%;
                 transition: 0.9s;
+                opacity: 0;
             }
         }
 
@@ -268,6 +350,13 @@
 
         .wu-spin-wheel__btn--modal {
             display: block;
+        }
+    }
+
+    // stop class
+    &--stop {
+        .wu-spin-wheel__spinner {
+            animation-iteration-count: 0;
         }
     }
 }

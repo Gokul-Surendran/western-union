@@ -15,9 +15,13 @@ tiles.forEach((tile) => {
 
 // spinner
 const spinbtn = document.querySelector('.wu-spin-wheel__btn');
+const stopbtn = document.querySelector('.wu-spin-wheel__btn--modal');
 const spinbody = document.querySelector('.wu-spin-wheel');
 
 
 spinbtn.addEventListener('click', () => {
   spinbody.classList.add('wu-spin-wheel--spin')
+})
+stopbtn.addEventListener('click', () => {
+  spinbody.classList.add('wu-spin-wheel--stop')
 })

@@ -16,6 +16,7 @@
   <body>
     <!-- body content start -->
     <div class="wu-spin-wheel">
+        <!-- background video -->
         <div class="wu-spin-wheel__bodybg">
             <video src="/assets/images/spin-wheel-bg-vid.mp4"  autoplay="true" loop="true" controls muted></video>
         </div>
@@ -31,65 +32,81 @@
                     </svg>                    
                 </a>
             </div>
-            <div class="content-wrapper">
-                <div class="wu-spin-wheel__body">
-                    <div class="wu-spin-wheel__left">
-                        <div class="wu-spin-wheel__sidehead">
-                            <h4>20</h4>
-                            <p>Participants in Queue</p>
+            <div class="wu-spin-wheel__body">
+                <!-- left box -->
+                <div class="wu-spin-wheel__left">
+                    <div class="wu-spin-wheel__sidehead">
+                        <h4>20</h4>
+                        <p>Participants in Queue</p>
+                    </div>
+                    <div  class="wu-spin-wheel__sidetext">
+                        <p>Ashley Markose</p>
+                        <p>Ashley Markose</p>
+                        <p>Ashley Markose</p>
+                        <p>Ashley Markose</p>
+                        <p>Ashley Markose</p>
+                        <p>Ashley Markose</p>
+                        <p>Ashley Markose</p>
+                    </div>
+                </div>
+                <!-- spin wheel -->
+                <div class="wu-spin-wheel__middle">
+                    <div class="wu-spin-wheel__disc">
+                        <div class="wu-spin-wheel__spinner">
+                            <img src="../assets/images/luckywheel.png" alt="">
                         </div>
-                        <div  class="wu-spin-wheel__sidetext">
-                            <p>Ashley Markose</p>
-                            <p>Ashley Markose</p>
-                            <p>Ashley Markose</p>
-                            <p>Ashley Markose</p>
-                            <p>Ashley Markose</p>
-                            <p>Ashley Markose</p>
-                            <p>Ashley Markose</p>
-                            <p>Ashley Markose</p>
-                            <p>Ashley Markose</p>
-                            <p>Ashley Markose</p>
+                        <div class="wu-spin-wheel__pointer">
+                            <img src="/assets/images/wheel-pointer.svg" alt="">
                         </div>
                     </div>
-                    <div class="wu-spin-wheel__middle">
-                        <div class="wu-spin-wheel__disc">
-                            <div class="wu-spin-wheel__spinner">
-                                <img src="../assets/images/luckywheel.png" alt="">
-                            </div>
-                            <div class="wu-spin-wheel__pointer">
-                                <img src="/assets/images/wheel-pointer.svg" alt="">
-                            </div>
-                        </div>
-                        <a href="#" class="wu-spin-wheel__btn">Spin Wheel</a>
-                        <a href="#" class="wu-spin-wheel__btn wu-spin-wheel__btn--modal" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Stop Wheel</a>
+                    <a href="#" class="wu-spin-wheel__btn">Spin Wheel</a>
+                    <a href="#" class="wu-spin-wheel__btn wu-spin-wheel__btn--modal" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Stop Wheel</a>
+                </div>
+                <!-- right box -->
+                <div class="wu-spin-wheel__right">
+                    <div class="wu-spin-wheel__sidehead">
+                        <!-- <h4>20</h4> -->
+                        <p>Players won</p>
                     </div>
-                    <div class="wu-spin-wheel__right">
-                        <div class="wu-spin-wheel__sidehead">
-                            <h4>20</h4>
-                            <p>Participants in Queue</p>
+                    <div  class="wu-spin-wheel__sidetext">
+                        <div class="wu-spin-wheel__players">
+                            <p>Ashley Markose</p>
+                            <span class="wu-spin-wheel__date">2023-Mar-11 10:00 PM</span>
                         </div>
-                        <div  class="wu-spin-wheel__sidetext">
+                        <div class="wu-spin-wheel__players">
                             <p>Ashley Markose</p>
+                            <span class="wu-spin-wheel__date">2023-Mar-11 10:00 PM</span>
+                        </div>
+                        <div class="wu-spin-wheel__players">
                             <p>Ashley Markose</p>
+                            <span class="wu-spin-wheel__date">2023-Mar-11 10:00 PM</span>
+                        </div>
+                        <div class="wu-spin-wheel__players">
                             <p>Ashley Markose</p>
+                            <span class="wu-spin-wheel__date">2023-Mar-11 10:00 PM</span>
+                        </div>
+                        <div class="wu-spin-wheel__players">
                             <p>Ashley Markose</p>
-                            <p>Ashley Markose</p>
-                            <p>Ashley Markose</p>
-                            <p>Ashley Markose</p>
-                            <p>Ashley Markose</p>
-                            <p>Ashley Markose</p>
-                            <p>Ashley Markose</p>
+                            <span class="wu-spin-wheel__date">2023-Mar-11 10:00 PM</span>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="content-wrapper">
             </div>
         </div>
         <!-- modal body -->
         <div class="modal fade wu-spin-wheel__modal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog  modal-dialog-centered">
               <div class="modal-content">
+                  <div class="wu-spin-wheel__modalbg">
+                    <video  src="../assets/images/congrats-bg.mp4" autoplay="true" loop="true"  muted></video>
+                  </div>
                 <div class="modal-body">
-                  
+                  <p class="wu-spin-wheel__congrts">Congratulations</p>
+                  <p class="wu-spin-wheel__prize">1st Prize winner</p>
+                  <h4 class="wu-spin-wheel__winner">Ashley Markose</h4>
+                  <p>+62 6956 3654</p>
                 </div>
                 <div class="modal-footer">
                     <a href="#" class="wu-spin-wheel__btn" data-bs-dismiss="modal">Finish</a>
