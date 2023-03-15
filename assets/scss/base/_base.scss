@@ -149,6 +149,15 @@ button {
   margin-right: auto;
 }
 
+.content-wrapper-small {
+  width: 100%;
+  max-width: 1510px;
+  padding-left: $spacer-6;
+  padding-right: $spacer-6;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .desk-visible {
   display: block;
 }
@@ -192,5 +201,11 @@ button {
 
   .only-mobile {
     display: block;
+  }
+}
+
+@include wide {
+  .content-wrapper-small {
+    max-width: none;
   }
 }

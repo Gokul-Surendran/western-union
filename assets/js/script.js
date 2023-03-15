@@ -17,11 +17,19 @@ tiles.forEach((tile) => {
 const spinbtn = document.querySelector('.wu-spin-wheel__btn');
 const stopbtn = document.querySelector('.wu-spin-wheel__btn--modal');
 const spinbody = document.querySelector('.wu-spin-wheel');
+// const spinwheel = document.querySelector('.wu-spin-wheel__spinner');
+// const value = Math.ceil(Math.random() * 36000);
 
 
 spinbtn.addEventListener('click', () => {
-  spinbody.classList.add('wu-spin-wheel--spin')
+  spinbody.classList.add('wu-spin-wheel--spin');
+
+  // spinwheel.style.transform = "rotate(" + value + "deg)";
+  // spinwheel.style.transition = "duration(" + value + "s)";
+  // value += Math.ceil(Math.random() * 36000);
 })
 stopbtn.addEventListener('click', () => {
-  spinbody.classList.add('wu-spin-wheel--stop')
+  spinbody.classList.add('wu-spin-wheel--stop');
 })
+
+// 

@@ -13,6 +13,7 @@
 
         video {
             width: 100%;
+            // width: auto;
             height: auto;
         }
 
@@ -43,7 +44,7 @@
             height: 100%;
             left: 0;
             top: 0;
-            background-image: url('/assets/images/spin-wheel-yellow-bg.png');
+            background-image: url('../../assets/images/spin-wheel-yellow-bg.png');
             background-position: inherit;
             background-repeat: no-repeat;
             background-size: cover;
@@ -75,7 +76,6 @@
     &__logo {
         width: 25%;
         height: auto;
-        background-image: url('/assets/images/black-logo-bg.png');
         background-position: bottom;
         background-repeat: no-repeat;
         background-size: cover;
@@ -88,15 +88,21 @@
         }
     }
 
+    &__bodyouter {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     &__body {
         position: relative;
         width: 100%;
-        height: 100vh;
         z-index: 1;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
-        padding: 0 $spacer-6;
+        // padding: 0 $spacer-6;
     }
 
 
@@ -123,7 +129,7 @@
     }
 
     &__sidetext {
-        padding: $spacer-3 0;
+        padding: $spacer-4 0;
         font-size: 18px;
         font-weight: $font-semi-bold;
         text-align: left;
@@ -164,10 +170,23 @@
 
     }
 
+
+
+    &__disc {
+        position: relative;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-bottom: $spacer-4;
+
+        .wu-spin-wheel__pointer {
+            position: absolute;
+        }
+    }
+
     &__pointer {
-        position: absolute;
-        width: 30px;
-        height: 30px;
+        width: 35px;
+        height: 35px;
         top: 0;
         left: 50%;
         transform: translateX(-50%);
@@ -179,13 +198,20 @@
     }
 
     &__spinner {
-        width: 300px;
-        height: 300px;
-        margin-bottom: $spacer-4;
+        position: relative;
+        z-index: -1;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 350px;
+        height: 350px;
+        // margin-bottom: $spacer-4;
         animation-name: spin;
         animation-iteration-count: infinite;
         animation-timing-function: linear;
         animation-delay: 1.5s;
+        // transition: transform 5s ease-in-out;
+        // transition-duration: 20s;
 
         img {
             width: 100%;
@@ -329,7 +355,7 @@
             transition: 0.9s;
         }
 
-        .wu-spin-wheel__disc {
+        .wu-spin-wheel__discwrap {
             transform: scale(1.3) translateY(-40px);
             transition: 0.3s;
         }
@@ -426,7 +452,7 @@
         }
 
         &--spin {
-            .wu-spin-wheel__disc {
+            .wu-spin-wheel__discwrap {
                 transform: scale(1.3) translateY(-180px);
             }
         }
@@ -467,6 +493,34 @@
         &__winner {
             font-size: 180px;
             margin-bottom: $spacer-3;
+        }
+    }
+}
+
+@include tablet {
+    .wu-spin-wheel {
+        &__bodybg {
+            video {
+                width: auto;
+                height: 100%;
+            }
+        }
+
+        &__outer {
+            &::after {
+                background-position: bottom;
+            }
+        }
+
+        &__logo {
+            width: 35%;
+        }
+
+        &__left,
+        &__right {
+            width: 30%;
+            max-height: 360px;
+            overflow-y: scroll;
         }
     }
 }
