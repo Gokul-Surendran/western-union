@@ -627,8 +627,13 @@
         &__left,
         &__right {
             width: 30%;
-            max-height: 360px;
+            max-height: 400px;
             overflow-y: scroll;
+        }
+
+        &__spinner {
+            width: 300px;
+            height: 300px;
         }
     }
 }
