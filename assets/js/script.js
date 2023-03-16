@@ -17,6 +17,7 @@ tiles.forEach((tile) => {
 const spinbtn = document.querySelector('.wu-spin-wheel__btn');
 const stopbtn = document.querySelector('.wu-spin-wheel__btn--modal');
 const spinbody = document.querySelector('.wu-spin-wheel');
+const finishbtn = document.querySelector('.modal-footer .wu-spin-wheel__btn');
 // const spinwheel = document.querySelector('.wu-spin-wheel__spinner');
 // const value = Math.ceil(Math.random() * 36000);
 
@@ -31,5 +32,9 @@ spinbtn.addEventListener('click', () => {
 stopbtn.addEventListener('click', () => {
   spinbody.classList.add('wu-spin-wheel--stop');
 })
+finishbtn.addEventListener('click', () => {
+  spinbody.classList.remove('wu-spin-wheel--spin');
+  spinbody.classList.remove('wu-spin-wheel--stop');
+})
 
-// 
+//

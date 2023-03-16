@@ -32,6 +32,12 @@
 
 
 @mixin wide {
+  @media (min-width: 1920px) and (max-width: 3840px) {
+    @content;
+  }
+}
+
+@mixin ultra-wide {
   @media (min-width: 3840px) {
     @content;
   }

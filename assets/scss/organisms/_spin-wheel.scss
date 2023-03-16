@@ -178,6 +178,7 @@
         background-repeat: no-repeat;
         background-size: contain;
         margin-bottom: $spacer-4;
+        // padding: 2px;
 
         .wu-spin-wheel__pointer {
             position: absolute;
@@ -289,6 +290,10 @@
         .modal-body {
             text-align: center;
             font-size: 25px;
+        }
+
+        .wu-spin-wheel__btn {
+            padding: $spacer-1 $spacer-6;
         }
     }
 
@@ -402,7 +407,7 @@
     }
 }
 
-@include wide {
+@include ultra-wide {
     .wu-spin-wheel {
         &__logo {
             padding: 100px 40px 100px 60px;
@@ -451,6 +456,10 @@
             border-radius: 75px;
         }
 
+        // &__disc {
+        //     // padding: 0;
+        // }
+
         &--spin {
             .wu-spin-wheel__discwrap {
                 transform: scale(1.3) translateY(-180px);
@@ -492,6 +501,105 @@
 
         &__winner {
             font-size: 180px;
+            margin-bottom: $spacer-3;
+        }
+    }
+}
+
+@include wide {
+    .wu-spin-wheel {
+        &__logo {
+            padding: 75px 20px 75px 30px;
+        }
+
+        &__close {
+            margin: 0 50px;
+        }
+
+        &__body {
+            padding: 0 80px;
+        }
+
+        &__left,
+        &__right {
+            padding: $spacer-5;
+        }
+
+        &__sidehead {
+            h4 {
+                font-size: 60px;
+            }
+
+            font-size: 50px;
+        }
+
+        &__sidetext {
+            font-size: 40px;
+            margin-bottom: $spacer-3;
+        }
+
+        &__spinner {
+            width: 600px;
+            height: 600px;
+            margin-bottom: 50px;
+        }
+
+        // &__disc {
+        //     // padding: 0;
+        // }
+
+        &__pointer {
+            width: 65px;
+            height: 65px;
+        }
+
+        &__btn {
+            font-size: 45px;
+            padding: $spacer-2 $spacer-6;
+            border-radius: 75px;
+        }
+
+        &--spin {
+            .wu-spin-wheel__discwrap {
+                transform: scale(1.3) translateY(-180px);
+            }
+        }
+
+        &__modal {
+            .modal-dialog {
+                max-width: 1500px;
+            }
+
+            .modal-body {
+                font-size: 60px;
+            }
+
+            .modal-content {
+                padding: 100px;
+            }
+
+            .wu-spin-wheel__btn {
+                margin-top: $spacer-3 !important;
+                padding: $spacer-2 80px;
+            }
+        }
+
+        &__modalbg {
+            border-radius: 50px;
+        }
+
+        &__congrts {
+            font-size: 90px;
+            margin-bottom: $spacer-3;
+        }
+
+        &__prize {
+            font-size: 70px;
+            margin-bottom: $spacer-3;
+        }
+
+        &__winner {
+            font-size: 135px;
             margin-bottom: $spacer-3;
         }
     }

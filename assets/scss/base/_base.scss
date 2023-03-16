@@ -204,6 +204,12 @@ button {
   }
 }
 
+@include ultra-wide {
+  .content-wrapper-small {
+    max-width: none;
+  }
+}
+
 @include wide {
   .content-wrapper-small {
     max-width: none;
