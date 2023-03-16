@@ -1,33 +1,31 @@
 .wu-lucky-draw {
-    &__head {
-        padding: $spacer-4 $spacer-2;
+  &__head {
+    padding: $spacer-4 $spacer-2;
 
-        .wu-sub-title {
-            margin-bottom: $spacer-2;
-        }
+    .wu-title {
+      margin-bottom: $spacer-3;
     }
+  }
 
+  &__tilewrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -8px;
 
-    &__tilewrap {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0 -8px;
-
-        .wu-lucky-tile {
-            width: calc(50% - 16px);
-            margin: 0 $spacer-2;
-        }
+    .wu-lucky-tile {
+      width: calc(50% - 16px);
+      margin: 0 $spacer-2;
     }
+  }
 }
 
 @include mobile {
-    .wu-lucky-draw {
-        &__tilewrap {
-
-            .wu-lucky-tile {
-                width: calc(100% - 16px);
-                margin: $spacer-2 $spacer-2;
-            }
-        }
+  .wu-lucky-draw {
+    &__tilewrap {
+      .wu-lucky-tile {
+        width: calc(100% - 16px);
+        margin: $spacer-2 $spacer-2;
+      }
     }
+  }
 }
