@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- styles -->
+    <!-- <link rel="stylesheet" href="../assets/css/aos.css">
+    <link rel="stylesheet" href="../assets/css/slick.css">
+    <link rel="stylesheet" href="../assets/css/slick-theme.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <!-- styles -->
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- body content start -->
+    <div class="wu-spin-wheel wu-spin-wheel--spin">
+        <!-- background video -->
+        <div class="wu-spin-wheel__bodybg">
+            <video src="../assets/images/spin-wheel-bg-vid.mp4"  autoplay="true" loop="true" muted></video>
+        </div>
+        <div class="wu-spin-wheel__outer">
+            <div class="wu-spin-wheel__head">
+                <div class="wu-spin-wheel__logo" style="background-image: url('../assets/images/black-logo-bg.png');">
+                    <img src="../assets/images/spin-wheel-logo.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- modal body -->
+        <div class="modal fade wu-spin-wheel__modal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog  modal-dialog-centered">
+              <div class="modal-content">
+                  <div class="wu-spin-wheel__modalbg">
+                    <video  src="../assets/images/congrats-bg.mp4" autoplay="true" loop="true"  muted></video>
+                  </div>
+                <div class="modal-body">
+                  <p class="wu-spin-wheel__congrts">Congratulations</p>
+                  <p class="wu-spin-wheel__prize">1st Prize winner</p>
+                  <h4 class="wu-spin-wheel__winner">Ashly Markose</h4>
+                  <p>+62 6956 3654</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="../pages/spin-wheel-1.html" class="wu-spin-wheel__btn">Finish</a>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- modal body -->
+    </div>
+    <!-- body content end -->
+
+    <!-- scripts -->
+    <!-- <script src="../assets/js/jquery.slim.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+  <!-- <script src="../assets/js/aos.js"></script>
+  <script src="../assets/js/slick.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+    <script src="../assets/js/script.js"></script>
+    <script>
+       $(window).on('load', function() {
+        // onload popup
+        $('.wu-spin-wheel__modal').modal('show');
+        setTimeout(function() {
+        $('.wu-spin-wheel__modal').modal();
+    }, 2000);
+    });
+    </script>
+    <!-- scripts -->
+  </body>
+</html>

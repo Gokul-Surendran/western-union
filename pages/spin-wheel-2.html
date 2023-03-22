@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- styles -->
+    <!-- <link rel="stylesheet" href="../assets/css/aos.css">
+    <link rel="stylesheet" href="../assets/css/slick.css">
+    <link rel="stylesheet" href="../assets/css/slick-theme.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <!-- styles -->
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- body content start -->
+    <div class="wu-spin-wheel">
+        <!-- background video -->
+        <div class="wu-spin-wheel__bodybg">
+            <video src="../assets/images/spin-wheel-bg-vid.mp4"  autoplay="true" loop="true" muted></video>
+        </div>
+        <div class="wu-spin-wheel__outer">
+            <div class="wu-spin-wheel__head">
+                <div class="wu-spin-wheel__logo" style="background-image: url('../assets/images/black-logo-bg.png');">
+                    <img src="../assets/images/spin-wheel-logo.svg" alt="">
+                </div>
+            </div>
+            <div class="content-wrapper-small">
+                <div class="wu-spin-wheel__bodyouter">
+                    <div class="wu-spin-wheel__body">
+                        <!-- left box -->
+                        <div class="wu-spin-wheel__left">
+                            <div class="wu-spin-wheel__sidehead">
+                                <h4>20</h4>
+                                <p>Participants in Queue</p>
+                            </div>
+                            <div  class="wu-spin-wheel__sidetext">
+                                <p>Ashly Markose</p>
+                                <p>Ashly Markose</p>
+                                <p>Ashly Markose</p>
+                                <p>Ashly Markose</p>
+                                <p>Ashly Markose</p>
+                                <p>Ashly Markose</p>
+                                <p>Ashly Markose</p>
+                            </div>
+                        </div>
+                        <!-- spin wheel -->
+                        <div class="wu-spin-wheel__middle">
+                            <div class="wu-spin-wheel__discwrap">
+                                <div class="wu-spin-wheel__disc">
+                                    <div class="wu-spin-wheel__spinner">
+                                        <video id="my_video" src="../assets/images/Spin-Wheel-Video.mp4" autoplay></video>
+                                        <!-- <iframe id="my_video" src="../assets/images/Spin-Wheel-Video.mp4?rel=0&;autoplay=1;controls=0;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; xr-spatial-tracking; clipboard-write"></iframe> -->
+                                        <!-- <iframe src="../assets/images/Spin-Wheel-Video.mp4" type="video/mp4" allow="autoplay" id="audio" style="display:none"></iframe>
+                                            <video id="myaudio" autoplay="autoplay" loop="loop" controls="controls">
+                                                <source src="../assets/images/Spin-Wheel-Video.mp4" type="video/mp4">
+                                            </video> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <a href="#" class="wu-spin-wheel__btn">Spin Wheel</a> -->
+                            <a href="../pages/spin-wheel-3.html" class="wu-spin-wheel__btn wu-spin-wheel__btn--modal">Stop Wheel</a>
+                        </div>
+                        <!-- right box -->
+                        <div class="wu-spin-wheel__right">
+                            <div class="wu-spin-wheel__sidehead">
+                                <!-- <h4>20</h4> -->
+                                <p>Players won</p>
+                            </div>
+                            <div  class="wu-spin-wheel__sidetext">
+                                <div class="wu-spin-wheel__players">
+                                    <p>Ashly Markose</p>
+                                    <span class="wu-spin-wheel__date">2023-Mar-11 10:00 PM</span>
+                                </div>
+                                <div class="wu-spin-wheel__players">
+                                    <p>Ashly Markose</p>
+                                    <span class="wu-spin-wheel__date">2023-Mar-11 10:00 PM</span>
+                                </div>
+                                <div class="wu-spin-wheel__players">
+                                    <p>Ashly Markose</p>
+                                    <span class="wu-spin-wheel__date">2023-Mar-11 10:00 PM</span>
+                                </div>
+                                <div class="wu-spin-wheel__players">
+                                    <p>Ashly Markose</p>
+                                    <span class="wu-spin-wheel__date">2023-Mar-11 10:00 PM</span>
+                                </div>
+                                <div class="wu-spin-wheel__players">
+                                    <p>Ashly Markose</p>
+                                    <span class="wu-spin-wheel__date">2023-Mar-11 10:00 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- body content end -->
+
+    <!-- scripts -->
+    <!-- <script src="../assets/js/jquery.slim.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+  <!-- <script src="../assets/js/aos.js"></script>
+  <script src="../assets/js/slick.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+    <script src="../assets/js/script.js"></script>
+    <script>
+        const spinbody = document.querySelector('.wu-spin-wheel');
+        const spinvideo = document.querySelector('.wu-spin-wheel__spinner video');
+
+        window.addEventListener('load', function() {
+            spinbody.classList.add('wu-spin-wheel--spin');
+        })
+        window.setTimeout(function(){
+            window.location.href = "../pages/spin-wheel-3.html";
+        }, 20000);
+
+        // window.onload = function() {
+        //     document.getElementById("my_video").play();
+        // }
+//         $(document).on("load","#my_video",function(e){
+//         if(isMuted){
+//             $('video').prop('muted', false);
+//         }
+//         else{
+//             console.log('hiii');
+//             $('video').prop('muted',true);
+//         }
+// });
+
+        
+    </script>
+    <!-- scripts -->
+  </body>
+</html>
