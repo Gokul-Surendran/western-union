@@ -82,7 +82,7 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  // font-size: 100%;
   vertical-align: baseline;
   font-weight: inherit;
 }
@@ -117,6 +117,7 @@ q {
 }
 
 blockquote {
+
   &:before,
   &:after {
     content: "";
@@ -125,6 +126,7 @@ blockquote {
 }
 
 q {
+
   &:before,
   &:after {
     content: "";
@@ -170,6 +172,7 @@ mark {
   background: none;
   color: inherit;
 }
+
 strong {
   font-weight: bold;
 }

@@ -150,7 +150,7 @@
 
     &__sidetext {
         padding: $spacer-4 0;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: $font-semi-bold;
         text-align: left;
 
@@ -460,7 +460,10 @@
         &__left,
         &__right {
             padding: $spacer-5;
-            max-height: 1125px;
+            // max-height: 1125px;
+            // min-height: 1125px;
+            max-height: 900px;
+            min-height: 900px;
 
             &::-webkit-scrollbar {
                 width: 10px;
@@ -476,8 +479,13 @@
         }
 
         &__sidetext {
-            font-size: 65px;
+            // font-size: 65px;
+            font-size: 45px;
             margin-bottom: $spacer-3;
+
+            p {
+                margin-bottom: $spacer-3;
+            }
         }
 
         &__spinner {
@@ -564,25 +572,33 @@
         &__left,
         &__right {
             padding: $spacer-5;
-            max-height: 770px;
+            // max-height: 770px;
+            // min-height: 770px;
+            max-height: 550px;
+            min-height: 550px;
         }
 
         &__sidehead {
             h4 {
-                font-size: 60px;
+                font-size: 50px;
             }
 
-            font-size: 50px;
+            font-size: 32px;
         }
 
         &__sidetext {
-            font-size: 40px;
+            // font-size: 40px;
+            font-size: 25px;
             margin-bottom: $spacer-3;
+
+            p {
+                margin-bottom: $spacer-3;
+            }
         }
 
         &__spinner {
-            width: 600px;
-            height: 600px;
+            width: 550px;
+            height: 550px;
             margin-bottom: 50px;
         }
 
@@ -596,7 +612,7 @@
         }
 
         &__btn {
-            font-size: 45px;
+            font-size: 30px;
             padding: $spacer-2 $spacer-6;
             border-radius: 75px;
         }
@@ -609,11 +625,11 @@
 
         &__modal {
             .modal-dialog {
-                max-width: 1500px;
+                max-width: 1200px;
             }
 
             .modal-body {
-                font-size: 60px;
+                font-size: 50px;
             }
 
             .modal-content {
@@ -631,17 +647,17 @@
         }
 
         &__congrts {
-            font-size: 90px;
+            font-size: 80px;
             margin-bottom: $spacer-3;
         }
 
         &__prize {
-            font-size: 70px;
+            font-size: 60px;
             margin-bottom: $spacer-3;
         }
 
         &__winner {
-            font-size: 135px;
+            font-size: 120px;
             margin-bottom: $spacer-3;
         }
     }
