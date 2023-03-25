@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,28 +11,65 @@
     <link rel="stylesheet" href="../assets/css/slick-theme.css">
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css"> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/css/style.css" />
     <!-- styles -->
     <title>Document</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <!-- body content start -->
     <div class="wu-spin-wheel">
         <!-- background video -->
         <div class="wu-spin-wheel__bodybg">
-            <video src="../assets/images/spin-wheel-bg-vid.mp4"  autoplay="true" loop="true" muted></video>
+            <video src="../assets/images/spin-wheel-bg-vid.mp4" autoplay="true" loop="true" muted></video>
         </div>
         <div class="wu-spin-wheel__outer">
             <div class="wu-spin-wheel__head">
                 <div class="wu-spin-wheel__logo" style="background-image: url('../assets/images/black-logo-bg.png');">
                     <img src="../assets/images/spin-wheel-logo.svg" alt="">
                 </div>
+
+                <!-- price details header starts -->
+                <div class="price-details">
+                    <div class="price-details__title">Luckydraw</div>
+                    <div class="price-details__card-wrap">
+                        <div class="price-details__card">
+                            <div class="price-details__card-img">
+                                <img src="../assets/images/spin-wheel-price-card-bg.png" alt="">
+                            </div>
+                            <div class="price-details__card-cnt">
+                                <div class="price-details__card-title">1st price</div>
+                                <div class="price-details__card-price">500$ cash</div>
+                            </div>
+                        </div>
+                        <div class="price-details__card">
+                            <div class="price-details__card-img">
+                                <img src="../assets/images/spin-wheel-price-card-bg.png" alt="">
+                            </div>
+                            <div class="price-details__card-cnt">
+                                <div class="price-details__card-title">1st price</div>
+                                <div class="price-details__card-price">500$ cash</div>
+                            </div>
+                        </div>
+                        <div class="price-details__card">
+                            <div class="price-details__card-img">
+                                <img src="../assets/images/spin-wheel-price-card-bg.png" alt="">
+                            </div>
+                            <div class="price-details__card-cnt">
+                                <div class="price-details__card-title">1st price</div>
+                                <div class="price-details__card-price">500$ cash</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- price details header ends -->
+
                 <a href="" class="wu-spin-wheel__close">
                     <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M2 1.5L26.5 26" stroke="black" stroke-width="3" stroke-linecap="round"/>
-                        <path d="M26.5 1.5L2 26" stroke="black" stroke-width="3" stroke-linecap="round"/>
-                    </svg>                    
+                        <path d="M2 1.5L26.5 26" stroke="black" stroke-width="3" stroke-linecap="round" />
+                        <path d="M26.5 1.5L2 26" stroke="black" stroke-width="3" stroke-linecap="round" />
+                    </svg>
                 </a>
             </div>
             <div class="content-wrapper-small">
@@ -43,7 +81,7 @@
                                 <h4>20</h4>
                                 <p>Participants in Queue</p>
                             </div>
-                            <div  class="wu-spin-wheel__sidetext">
+                            <div class="wu-spin-wheel__sidetext">
                                 <p>Ashly Markose</p>
                                 <p>Ashly Markose</p>
                                 <p>Ashly Markose</p>
@@ -72,9 +110,9 @@
                         <div class="wu-spin-wheel__right">
                             <div class="wu-spin-wheel__sidehead">
                                 <!-- <h4>20</h4> -->
-                                <p>Players won</p>
+                                <p>Past Winners</p>
                             </div>
-                            <div  class="wu-spin-wheel__sidetext">
+                            <div class="wu-spin-wheel__sidetext">
                                 <div class="wu-spin-wheel__players">
                                     <p>Ashly Markose</p>
                                     <span class="wu-spin-wheel__date">2023-Mar-11 10:00 PM</span>
@@ -106,37 +144,39 @@
 
     <!-- scripts -->
     <!-- <script src="../assets/js/jquery.slim.min.js"></script> -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
-  <!-- <script src="../assets/js/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <!-- <script src="../assets/js/aos.js"></script>
   <script src="../assets/js/slick.min.js"></script> -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
     <script src="../assets/js/script.js"></script>
-    <script type="text/javascript"> 
+    <script type="text/javascript">
         const spinbtn = document.querySelector('.wu-spin-wheel__btn');
         const spinbody = document.querySelector('.wu-spin-wheel');
-        var video = document.querySelector(".wu-spin-wheel__spinner video"); 
-
+        var video = document.querySelector(".wu-spin-wheel__spinner video");
+        const price_details = document.querySelector(".price-details");
 
         spinbtn.addEventListener('click', (e) => {
             e.preventDefault();
             // transition
             spinbody.classList.add('wu-spin-wheel--spin');
+            // to hide price details header
+            price_details.classList.add("price-details--hide");
             // video play onclick
-            if (video.paused) { 
-            video.play(); 
-            } 
-            else 
-            { 
-            video.pause();
+            if (video.paused) {
+                video.play();
+            }
+            else {
+                video.pause();
             }
             // redirecting page 20s
             window.setTimeout(function () {
                 window.location.href = "../pages/spin-wheel-3.html";
             }, 20000);
         })
-        </script> 
+    </script>
     <!-- scripts -->
-  </body>
+</body>
+
 </html>
