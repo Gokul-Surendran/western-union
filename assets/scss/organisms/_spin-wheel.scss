@@ -428,6 +428,102 @@
     //         animation-iteration-count: 0;
     //     }
     // }
+
+    // price details header starts here
+
+        // todo
+            // to make sure the close btn is positioned in center
+                .wu-spin-wheel__close{
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                    transform: translateY(-100%);
+                }
+            // TO alighn the logo to top
+                .wu-spin-wheel__head{
+                    align-items: flex-start;
+                } 
+            // To make sure the spin weel and side boxes seen clearly in the screen
+                .wu-spin-wheel__bodyouter{
+                    height: calc(100vh - 300px);
+                }
+
+    .price-details {
+        flex: 1;
+        height: 100%;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(-10%);
+
+        &--hide{
+            display: none !important;
+        }
+
+        &__title {
+            font-size: 44px;
+            font-weight: 900;
+            margin-bottom: 16px;
+            text-transform: capitalize;
+        }
+
+        &__card-wrap {
+            width: 100%;
+            display: flex;
+            // align-items: center;
+            justify-content: center;
+        }
+
+        &__card {
+            position: relative;
+            width: calc(25% - 32px);
+            min-width: 200px;
+            height: auto;
+            margin: 0 16px;
+            overflow: hidden;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &-img {
+                position: absolute;
+                bottom: 0;
+                top: 0;
+                left: 0;
+                right: 0;
+
+                video,
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            &-cnt {
+                text-align: center;
+                height: 100%;
+                position: relative;
+                flex: 1 1 auto;
+                padding: 24px;
+
+            }
+            &-title {
+                font-size: 32px;
+                font-weight: 800;
+                margin-bottom: 16px;
+                color: $color-yellow;
+            }
+
+            &-price {
+                font-size: 22px;
+                font-weight: 700;
+                color: $color-yellow;
+            }
+        }
+    }
+    // price details header ends here
 }
 
 
