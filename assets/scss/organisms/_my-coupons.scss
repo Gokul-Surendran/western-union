@@ -1,15 +1,19 @@
 .wu-my-coupons {
   padding: $spacer-4 $spacer-0;
+
   .wu-title {
     padding-bottom: $spacer-3;
   }
+
   .wu-para {
     padding-bottom: $spacer-4;
   }
+
   &__tile-wrap {
     display: flex;
     flex-wrap: wrap;
   }
+
   &__tile-outer {
     width: calc(50% - 16px);
     margin: $spacer-2;
@@ -18,6 +22,7 @@
     border-radius: 15px;
     // min-height: 150px;
   }
+
   &__tile {
     display: flex;
     align-items: center;
@@ -27,12 +32,15 @@
     border-radius: 15px;
     width: 100%;
     height: 100%;
+
     &--blue {
       background-color: #94cbf2;
+
       .wu-my-coupons__tile-desc {
         color: $color-white;
       }
     }
+
     &--redeem {
       background-color: #f5f5fa;
       pointer-events: none;
@@ -45,6 +53,7 @@
       // }
     }
   }
+
   &__tile-black {
     background-color: $color-black;
     padding: $spacer-3 $spacer-4 $spacer-3 $spacer-3;
@@ -59,39 +68,47 @@
     right: -100%;
     transition: 0.3s;
   }
+
   &__tile-list {
     color: $color-white;
   }
+
   &__inner-wrap {
     display: flex;
     align-items: center;
     margin-right: $spacer-3;
   }
+
   &__qr {
     width: 100px;
     height: auto;
     margin-right: $spacer-3;
+
     img {
       width: 100%;
     }
   }
+
   &__tile-head {
     font-size: 20px;
     color: $color-black2;
     font-weight: $font-medium;
     padding-bottom: $spacer-2;
   }
+
   &__tile-desc {
     font-size: 14px;
     color: #808080;
     font-weight: $font-medium;
     max-width: 200px;
   }
+
   &__arrow-left,
   &__arrow-right {
     svg {
       transition: 0.3s;
     }
+
     &:hover {
       svg {
         scale: 1.1;
@@ -99,6 +116,7 @@
       }
     }
   }
+
   &__tile-list {
     width: 75%;
     margin-right: $spacer-3;
@@ -106,10 +124,12 @@
     font-size: 12px;
     overflow-y: auto;
     max-height: 115px;
+
     li {
       position: relative;
       margin-left: $spacer-3;
       margin-bottom: $spacer-1;
+
       &::before {
         content: "";
         position: absolute;
@@ -122,12 +142,14 @@
       }
     }
   }
+
   .wu-my-coupons__tile-outer.show {
     .wu-my-coupons__tile-black {
       right: 0px;
     }
   }
 }
+
 @include tablet {
   .wu-my-coupons {
     &__tile-list {
@@ -135,24 +157,29 @@
     }
   }
 }
+
 @include mobile {
   .wu-my-coupons {
     &__tile-wrap {
       flex-direction: column;
     }
+
     &__tile-outer {
       width: 100%;
       margin: $spacer-0 $spacer-0 $spacer-3 $spacer-0;
       padding: $spacer-0;
       min-height: auto;
     }
+
     &__qr {
       width: 80px;
       height: auto;
     }
+
     &__tile-head {
       font-size: 18px;
     }
+
     &__arrow-left,
     &__arrow-right {
       svg {
@@ -160,6 +187,7 @@
         height: 25px;
       }
     }
+
     &__tile-list {
       max-height: 80px;
       width: 80%;

@@ -1,5 +1,79 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
-// @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital@1&family=IBM+Plex+Sans+JP&family=Roboto&display=swap');
+// @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+// @import url('https://fonts.googleapis.com/css2?family=Lalezar&family=Roboto:wght@400;500;700;900&display=swap');
+
+@font-face {
+  font-family: 'PP Eiko';
+  src: url('../fonts/PPEiko-BlackItalic.woff') format('woff2'),
+    url('../fonts/PPEiko-BlackItalic.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PP Eiko';
+  src: url('../fonts/PPEiko-BlackItalic.woff2') format('woff2'),
+    url('../fonts/PPEiko-BlackItalic.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PP Right Grotesk Spatial';
+  src: url('../fonts/PPRightGrotesk-SpatialBlack.woff2') format('woff2'),
+    url('PPRightGrotesk-SpatialBlack.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PP Right Grotesk Wide';
+  src: url('../fonts/PPRightGrotesk-WideBlack.woff2') format('woff2'),
+    url('../fonts/PPRightGrotesk-WideBlack.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PP Right Grotesk Wide';
+  src: url('../fonts/PPRightGrotesk-WideMedium.woff2') format('woff2'),
+    url('../fonts/PPRightGrotesk-WideMedium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Medium.woff2') format('woff2'),
+    url('../fonts/Roboto-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Bold.woff2') format('woff2'),
+    url('../fonts/Roboto-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+    url('../fonts/Roboto-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 
 html {
   scroll-behavior: smooth;
@@ -7,10 +81,8 @@ html {
 
 html,
 body {
-  font-family: "Montserrat", sans-serif;
-  // font-family: 'Bodoni Moda', serif;
-  // font-family: 'IBM Plex Sans JP', sans-serif;
-  // font-family: 'Roboto', sans-serif;
+  // font-family: "Montserrat", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: $font-regular;
   line-height: 1.3;
