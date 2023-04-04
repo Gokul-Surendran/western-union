@@ -20,13 +20,55 @@
     <div class="wu-spin-wheel">
         <!-- background video -->
         <div class="wu-spin-wheel__bodybg">
-            <video src="../assets/images/spin-wheel-bg-vid.mp4"  autoplay="true" loop="true" muted></video>
+            <video src="../assets/images/spin-wheel-bg-vid.mp4" autoplay="true" loop="true" muted></video>
         </div>
         <div class="wu-spin-wheel__outer">
             <div class="wu-spin-wheel__head">
                 <div class="wu-spin-wheel__logo" style="background-image: url('../assets/images/black-logo-bg.png');">
                     <img src="../assets/images/spin-wheel-logo.svg" alt="">
                 </div>
+
+                <!-- price details header starts -->
+                <div class="price-details">
+                    <div class="price-details__title">Luckydraw</div>
+                    <div class="price-details__card-wrap">
+                        <div class="price-details__card">
+                            <div class="price-details__card-img">
+                                <img src="../assets/images/spin-wheel-price-card-bg.png" alt="">
+                            </div>
+                            <div class="price-details__card-cnt">
+                                <div class="price-details__card-title">1st prize</div>
+                                <div class="price-details__card-price">500$ Cash Coupon </div>
+                            </div>
+                        </div>
+                        <div class="price-details__card">
+                            <div class="price-details__card-img">
+                                <img src="../assets/images/spin-wheel-price-card-bg.png" alt="">
+                            </div>
+                            <div class="price-details__card-cnt">
+                                <div class="price-details__card-title">2nd prize</div>
+                                <div class="price-details__card-price">Philips Refrigerator</div>
+                            </div>
+                        </div>
+                        <div class="price-details__card">
+                            <div class="price-details__card-img">
+                                <img src="../assets/images/spin-wheel-price-card-bg.png" alt="">
+                            </div>
+                            <div class="price-details__card-cnt">
+                                <div class="price-details__card-title">3rd prize</div>
+                                <div class="price-details__card-price">Samsung 32” smart tv</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- price details header ends -->
+
+                <a href="" class="wu-spin-wheel__close">
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 1.5L26.5 26" stroke="black" stroke-width="3" stroke-linecap="round" />
+                        <path d="M26.5 1.5L2 26" stroke="black" stroke-width="3" stroke-linecap="round" />
+                    </svg>
+                </a>
             </div>
             <div class="content-wrapper-small">
                 <div class="wu-spin-wheel__bodyouter">
@@ -37,7 +79,7 @@
                                 <h4>20</h4>
                                 <p>Participants in Queue</p>
                             </div>
-                            <div  class="wu-spin-wheel__sidetext">
+                            <div class="wu-spin-wheel__sidetext">
                                 <p>Ashly Markose</p>
                                 <p>Ashly Markose</p>
                                 <p>Ashly Markose</p>
@@ -52,17 +94,15 @@
                             <div class="wu-spin-wheel__discwrap">
                                 <div class="wu-spin-wheel__disc">
                                     <div class="wu-spin-wheel__spinner">
-                                        <video id="my_video" src="../assets/images/Spin-Wheel-Video.mp4" autoplay></video>
-                                        <!-- <iframe id="my_video" src="../assets/images/Spin-Wheel-Video.mp4?rel=0&;autoplay=1;controls=0;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; xr-spatial-tracking; clipboard-write"></iframe> -->
-                                        <!-- <iframe src="../assets/images/Spin-Wheel-Video.mp4" type="video/mp4" allow="autoplay" id="audio" style="display:none"></iframe>
-                                            <video id="myaudio" autoplay="autoplay" loop="loop" controls="controls">
-                                                <source src="../assets/images/Spin-Wheel-Video.mp4" type="video/mp4">
-                                            </video> -->
+                                        <video src="../assets/images/Spin-Wheel-Video.mp4"></video>
+                                        <!-- <img src="../assets/images/luckywheel_inner.png" alt=""> -->
                                     </div>
+                                    <!-- <div class="wu-spin-wheel__pointer">
+                                        <img src="../assets/images/wheel-pointer.svg" alt="">
+                                    </div> -->
                                 </div>
                             </div>
-                            <!-- <a href="#" class="wu-spin-wheel__btn">Spin Wheel</a> -->
-                            <a href="../pages/spin-wheel-3.html" class="wu-spin-wheel__btn wu-spin-wheel__btn--modal">Stop Wheel</a>
+                            <a href="../pages/spin-wheel-2.html" class="wu-spin-wheel__btn">Spin Wheel</a>
                         </div>
                         <!-- right box -->
                         <div class="wu-spin-wheel__right">
@@ -70,25 +110,30 @@
                                 <!-- <h4>20</h4> -->
                                 <p>Past Winners</p>
                             </div>
-                            <div  class="wu-spin-wheel__sidetext">
+                            <div class="wu-spin-wheel__sidetext">
                                 <div class="wu-spin-wheel__players">
                                     <p>Ashly Markose</p>
+                                    <p class="wu-spin-wheel__prizedetail">Won: 500$ Cash Coupon</p>
                                     <span class="wu-spin-wheel__date">2023-Mar-11 10:00 PM</span>
                                 </div>
                                 <div class="wu-spin-wheel__players">
                                     <p>Ashly Markose</p>
+                                    <p class="wu-spin-wheel__prizedetail">Won: Apple iphone 14 pro</p>
                                     <span class="wu-spin-wheel__date">2023-Mar-11 10:00 PM</span>
                                 </div>
                                 <div class="wu-spin-wheel__players">
                                     <p>Ashly Markose</p>
+                                    <p class="wu-spin-wheel__prizedetail">Won: Dior Perfume 300 ml</p>
                                     <span class="wu-spin-wheel__date">2023-Mar-11 10:00 PM</span>
                                 </div>
                                 <div class="wu-spin-wheel__players">
                                     <p>Ashly Markose</p>
+                                    <p class="wu-spin-wheel__prizedetail">Won: Dior Perfume 300 ml</p>
                                     <span class="wu-spin-wheel__date">2023-Mar-11 10:00 PM</span>
                                 </div>
                                 <div class="wu-spin-wheel__players">
                                     <p>Ashly Markose</p>
+                                    <p class="wu-spin-wheel__prizedetail">Won: Dior Perfume 300 ml</p>
                                     <span class="wu-spin-wheel__date">2023-Mar-11 10:00 PM</span>
                                 </div>
                             </div>
@@ -100,6 +145,22 @@
     </div>
     <!-- body content end -->
 
+    <!-- modal body -->
+    <div class="modal fade wu-spin-wheel__modal wu-spin-wheel__modal--message" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <p>Are yo sure to run the lucky draw ?</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#" id="spinbtn" class="wu-spin-wheel__btn" data-dismiss="modal">Yes</a>
+                <a href="../pages/spin-wheel-1.html" class="wu-spin-wheel__btn">No</a>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- modal body -->
+
     <!-- scripts -->
     <!-- <script src="../assets/js/jquery.slim.min.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
@@ -110,30 +171,36 @@
     crossorigin="anonymous"></script>
     <script src="../assets/js/script.js"></script>
     <script>
+        const spinbtn = document.querySelector('#spinbtn');
         const spinbody = document.querySelector('.wu-spin-wheel');
-        const spinvideo = document.querySelector('.wu-spin-wheel__spinner video');
+        var video = document.querySelector(".wu-spin-wheel__spinner video");
+        const price_details = document.querySelector(".price-details");
 
-        window.addEventListener('load', function() {
+        $(window).on('load', function() {
+            // transitions
             spinbody.classList.add('wu-spin-wheel--spin');
+            price_details.classList.add("price-details--hide");
+            // onload popup
+            $('.wu-spin-wheel__modal').modal('show');
+        });
+
+        spinbtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            // popup close
+            $('.wu-spin-wheel__modal').hide();
+            $('.modal-backdrop').remove();
+            // video play onclick
+            if (video.paused) {
+                video.play();
+            }
+            else {
+                video.pause();
+            }
+            // redirecting page 20s
+            window.setTimeout(function () {
+                window.location.href = "../pages/spin-wheel-3.html";
+            }, 20000);
         })
-        window.setTimeout(function(){
-            window.location.href = "../pages/spin-wheel-3.html";
-        }, 20000);
-
-        // window.onload = function() {
-        //     document.getElementById("my_video").play();
-        // }
-//         $(document).on("load","#my_video",function(e){
-//         if(isMuted){
-//             $('video').prop('muted', false);
-//         }
-//         else{
-//             console.log('hiii');
-//             $('video').prop('muted',true);
-//         }
-// });
-
-        
     </script>
     <!-- scripts -->
   </body>

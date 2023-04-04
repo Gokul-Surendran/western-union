@@ -30,35 +30,17 @@
             </div>
         </div>
         <!-- modal body -->
-        <div class="modal fade wu-spin-wheel__modal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog  modal-dialog-centered">
-              <div class="modal-content">
-                  <div class="wu-spin-wheel__modalbg">
-                    <video  src="../assets/images/congrats-bg.mp4" autoplay="true" loop="true"  muted></video>
-                  </div>
-                <div class="modal-body">
-                  <p class="wu-spin-wheel__congrts">Congratulations</p>
-                  <p class="wu-spin-wheel__prize">1st Prize winner</p>
-                  <h4 class="wu-spin-wheel__winner">Ashly Markose</h4>
-                  <p>+62 6956 3654</p>
-                  <div class="wu-spin-wheel__winnerouter">
-                    <div class="wu-spin-wheel__winnersec">
-                      <p class="wu-spin-wheel__prize">2nd Prize winner</p>
-                      <h4 class="wu-spin-wheel__winner">Ashly Markose</h4>
-                      <p>+62 6956 3654</p>
-                    </div>
-                    <div class="wu-spin-wheel__winnersec">
-                      <p class="wu-spin-wheel__prize">3rd Prize winner</p>
-                      <h4 class="wu-spin-wheel__winner">Ashly Markose</h4>
-                      <p>+62 6956 3654</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="modal-footer">
-                    <a href="../pages/spin-wheel-1.html" class="wu-spin-wheel__btn">Finish</a>
-                </div>
+        <div class="modal fade wu-spin-wheel__modal wu-spin-wheel__modal--message wu-spin-wheel__modal--disabled show" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog  modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-body">
+                <p>The luckydraw is not yet open.</p>
+              </div>
+              <div class="modal-footer">
+                  <a href="../pages/spin-wheel-1.html" class="wu-spin-wheel__btn">Ok</a>
               </div>
             </div>
+          </div>
         </div>
         <!-- modal body -->
     </div>
@@ -74,13 +56,10 @@
     crossorigin="anonymous"></script>
     <script src="../assets/js/script.js"></script>
     <script>
-      // onload popup
        $(window).on('load', function() {
+        // onload popup
         $('.wu-spin-wheel__modal').modal('show');
-        setTimeout(function() {
-        $('.wu-spin-wheel__modal').modal();
-    }, 2000);
-    });
+      });
     </script>
     <!-- scripts -->
   </body>

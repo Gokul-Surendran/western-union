@@ -328,7 +328,7 @@
                 display: block;
                 background-color: $color-black;
                 color: $color-yellow;
-                border-color: $color-yellow;
+                border-color: $color-black;
 
                 &:hover {
                     background-color: $color-yellow;
@@ -345,6 +345,36 @@
 
         .wu-spin-wheel__btn {
             padding: $spacer-1 $spacer-6;
+        }
+
+        &--message {
+            .modal-content {
+                background-color: $color-yellow !important;
+                border-radius: 15px;
+            }
+
+            .modal-dialog {
+                max-width: 600px;
+            }
+
+            .modal-body {
+                P {
+                    font-size: 28px;
+                    font-family: 'PP Right Grotesk Wide';
+                }
+            }
+
+            .modal-footer {
+                .wu-spin-wheel__btn {
+                    margin: 0 $spacer-3;
+                }
+            }
+        }
+
+        &--disabled {
+            .modal-dialog {
+                transform: none !important;
+            }
         }
     }
 
@@ -468,9 +498,6 @@
     // }
 
     // price details header starts here
-
-    // todo
-    // to make sure the close btn is positioned in center
     .wu-spin-wheel__close {
         position: absolute;
         top: 30%;
@@ -478,7 +505,7 @@
         transform: translateY(-100%);
     }
 
-    // TO alighn the logo to top
+    // TO align the logo to top
     .wu-spin-wheel__head {
         align-items: flex-start;
     }
@@ -587,6 +614,7 @@
 //     }
 // }
 
+// 4k resolutions
 @include ultra-wide {
     .wu-spin-wheel {
         &__logo {
@@ -688,6 +716,31 @@
 
             .modal-footer {
                 padding-top: 24px;
+            }
+
+            &--message {
+
+                .modal-dialog {
+                    max-width: 1800px;
+                }
+
+                .modal-content {
+                    border-radius: 30px;
+                }
+
+                .modal-body {
+                    P {
+                        font-size: 100px;
+                    }
+                }
+
+                .modal-footer {
+                    padding-top: 70px;
+
+                    .wu-spin-wheel__btn {
+                        margin: 0 $spacer-5;
+                    }
+                }
             }
         }
 
@@ -804,6 +857,7 @@
     }
 }
 
+// Full hd screen
 @include wide {
     .wu-spin-wheel {
         &__logo {
@@ -897,6 +951,29 @@
                 margin-top: $spacer-3 !important;
                 padding: $spacer-2 80px;
             }
+
+            &--message {
+
+                .modal-dialog {
+                    max-width: 1000px;
+                }
+
+                .modal-content {
+                    border-radius: 25px;
+                }
+
+                .modal-body {
+                    P {
+                        font-size: 45px;
+                    }
+                }
+
+                .modal-footer {
+                    .wu-spin-wheel__btn {
+                        margin: 0 $spacer-4;
+                    }
+                }
+            }
         }
 
         &__modalbg {
@@ -957,6 +1034,7 @@
     }
 }
 
+// tablet view
 @include tablet {
     .wu-spin-wheel {
         &__bodybg {
