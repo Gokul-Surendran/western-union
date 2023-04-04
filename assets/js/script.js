@@ -49,3 +49,7 @@ tiles.forEach((tile) => {
 // })
 
 //
+
+document.querySelector('.wu-spin-wheel__spinwords').innerHTML = document.querySelector('.wu-spin-wheel__spinwords').textContent.replace(/./g, "<span>$&</span>");
+
+let span = document.querySelector('.wu-spin-wheel__spinwords span')
