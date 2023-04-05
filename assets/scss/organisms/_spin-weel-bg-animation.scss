@@ -1,0 +1,58 @@
+.test{
+    display: inline-block;
+    padding: 16px;
+    color: transparent;
+    position: absolute;
+    opacity: 0;
+    top: -50px;
+
+    // variables
+    
+    --anime-top-pos1: 0%;
+    --anime-top-pos2: 0%;
+    --anime-top-pos3: 0%;
+    --anime-top-pos4: 0%;
+    --anime-top-pos5: 0%;
+
+    &--mod{
+        width: auto;
+        color: #fff;
+        animation: drops 20s 2s 20;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+}
+
+.test-block{
+    width: 97vw;
+    height: 100vh;
+    background-color: red;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+
+@keyframes drops {
+    20%{
+        opacity: .5;
+        top: var(--anime-top-pos1);
+    }
+    40%{
+        opacity: .7;
+        top: var(--anime-top-pos2);
+    }
+    60%{
+        opacity: 1;
+        top: var(--anime-top-pos3);
+    }
+    80%{
+        opacity: 1;
+        top: var(--anime-top-pos4);
+    }
+    100%{
+        opacity: 1;
+        top: var(--anime-top-pos5);
+    }
+}

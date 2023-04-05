@@ -13,43 +13,44 @@ tiles.forEach((tile) => {
   });
 });
 
-// spinner
-// const spinbtn = document.querySelector('.wu-spin-wheel__btn');
-// const stopbtn = document.querySelector('.wu-spin-wheel__btn--modal');
-// const spinbody = document.querySelector('.wu-spin-wheel');
-// const finishbtn = document.querySelector('.modal-footer .wu-spin-wheel__btn');
-// const spinvideo = document.querySelector('.wu-spin-wheel__spinner video');
-// const spinwheel = document.querySelector('.wu-spin-wheel__spinner');
-// const value = Math.ceil(Math.random() * 36000);
+// To create spin-weel-bg-animation
+const testtt = document.querySelector(".test-block");
+var test_text = "Lorem ipsum, dolor, sit amet consectetur, adipisicing elit, Inventore, esse numquam, tempore facere, odio! Quisquam, tempora accusantium, ut aliquid, Quidem, libero, consectetur, facere voluptatem deserunt, animi voluptates, dolore non ve"
+if(testtt ){
+  let text_array = test_text.split(','); 
+  text_array.forEach(item => {
 
+    const ele = createNewElement();
 
-// spinbtn.addEventListener('click', () => {
-//   spinbody.classList.add('wu-spin-wheel--spin');
-//   window.setTimeout(function () {
-//     window.location.href = "../pages/spin-wheel-3.html";
-//   }, 20000);
+    setTimeout(()=> {
+      ele.classList.add('test--mod');
+      ele.style.left = `${randomNumberGenerator(0,90)}%`;
 
-// })
-// if (spinvideo.paused == true) {
-//   spinvideo.play();
-// }
-// else {
-//   spinvideo.pause();
-// }
+      // calling function to set position
+      setRandomPosition(ele);
+    }, 0)
 
-// spinwheel.style.transform = "rotate(" + value + "deg)";
-// spinwheel.style.transition = "duration(" + value + "s)";
-// value += Math.ceil(Math.random() * 36000);
-// stopbtn.addEventListener('click', () => {
-//   spinbody.classList.add('wu-spin-wheel--stop');
-// })
-// finishbtn.addEventListener('click', () => {
-//   spinbody.classList.remove('wu-spin-wheel--spin');
-//   spinbody.classList.remove('wu-spin-wheel--stop');
-// })
+    // To set the position of each name
+    function setRandomPosition(ele) {
+      ele.style.setProperty('--anime-top-pos1', randomNumberGenerator(0, 20) + '%');
+      ele.style.setProperty('--anime-top-pos2', randomNumberGenerator(0, 40) + '%');
+      ele.style.setProperty('--anime-top-pos3', randomNumberGenerator(0, 60) + '%');
+      ele.style.setProperty('--anime-top-pos4', randomNumberGenerator(0, 80) + '%');
+      ele.style.setProperty('--anime-top-pos5', randomNumberGenerator(0, 100) + '%');
+    }
 
-//
+    // To create a random number b/w min and max
+    function randomNumberGenerator(min,max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
 
-document.querySelector('.wu-spin-wheel__spinwords').innerHTML = document.querySelector('.wu-spin-wheel__spinwords').textContent.replace(/./g, "<span>$&</span>");
-
-let span = document.querySelector('.wu-spin-wheel__spinwords span')
+    // To create and add element to the body
+    function createNewElement() {
+      const ele = document.createElement('div');
+      ele.classList.add('test');
+      ele.textContent = item + "?";
+      testtt.appendChild(ele);
+      return ele;
+    }
+  })
+}
