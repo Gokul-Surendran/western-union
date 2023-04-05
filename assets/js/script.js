@@ -14,16 +14,18 @@ tiles.forEach((tile) => {
 });
 
 // To create spin-weel-bg-animation
-const testtt = document.querySelector(".test-block");
-var test_text = "Lorem ipsum, dolor, sit amet consectetur, adipisicing elit, Inventore, esse numquam, tempore facere, odio! Quisquam, tempora accusantium, ut aliquid, Quidem, libero, consectetur, facere voluptatem deserunt, animi voluptates, dolore non ve"
-if(testtt ){
-  let text_array = test_text.split(','); 
-  text_array.forEach(item => {
+// const spinWeelBg_body = document.querySelector(".spinWeelBg_body");
+const spinWeelBg_body = document.querySelector(".wu-spin-wheel__outer.spinWeelBg_body");
+var spinWeelBg_names = "Lorem ipsum, dolor, sit amet consectetur, adipisicing elit, Inventore, esse numquam, tempore facere, odio! Quisquam, tempora accusantium, ut aliquid, Quidem, libero, consectetur, facere voluptatem deserunt, animi voluptates, dolore non ve";
 
+if(spinWeelBg_body ){
+  let spinWeelBg_nameArray = spinWeelBg_names.split(','); 
+
+  spinWeelBg_nameArray.forEach(item => {
     const ele = createNewElement();
 
     setTimeout(()=> {
-      ele.classList.add('test--mod');
+      ele.classList.add('spinWeelBg_name--mod');
       ele.style.left = `${randomNumberGenerator(0,90)}%`;
 
       // calling function to set position
@@ -47,9 +49,9 @@ if(testtt ){
     // To create and add element to the body
     function createNewElement() {
       const ele = document.createElement('div');
-      ele.classList.add('test');
+      ele.classList.add('spinWeelBg_name');
       ele.textContent = item + "?";
-      testtt.appendChild(ele);
+      spinWeelBg_body.appendChild(ele);
       return ele;
     }
   })
