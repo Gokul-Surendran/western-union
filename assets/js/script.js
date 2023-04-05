@@ -13,52 +13,46 @@ tiles.forEach((tile) => {
   });
 });
 
-// spinner
-// const spinbtn = document.querySelector('.wu-spin-wheel__btn');
-// const stopbtn = document.querySelector('.wu-spin-wheel__btn--modal');
-// const spinbody = document.querySelector('.wu-spin-wheel');
-// const finishbtn = document.querySelector('.modal-footer .wu-spin-wheel__btn');
-// const spinvideo = document.querySelector('.wu-spin-wheel__spinner video');
-// const spinwheel = document.querySelector('.wu-spin-wheel__spinner');
-// const value = Math.ceil(Math.random() * 36000);
+// To create spin-weel-bg-animation
+// const spinWeelBg_body = document.querySelector(".spinWeelBg_body");
+const spinWeelBg_body = document.querySelector(".wu-spin-wheel__outer.spinWeelBg_body");
+var spinWeelBg_names = "Lorem ipsum, dolor, sit amet consectetur, adipisicing elit, Inventore, esse numquam, tempore facere, odio! Quisquam, tempora accusantium, ut aliquid, Quidem, libero, consectetur, facere voluptatem deserunt, animi voluptates, dolore non ve";
 
+if (spinWeelBg_body) {
+  let spinWeelBg_nameArray = spinWeelBg_names.split(',');
 
-// spinbtn.addEventListener('click', () => {
-//   spinbody.classList.add('wu-spin-wheel--spin');
-//   window.setTimeout(function () {
-//     window.location.href = "../pages/spin-wheel-3.html";
-//   }, 20000);
+  spinWeelBg_nameArray.forEach(item => {
+    const ele = createNewElement();
 
-// })
-// if (spinvideo.paused == true) {
-//   spinvideo.play();
-// }
-// else {
-//   spinvideo.pause();
-// }
+    setTimeout(() => {
+      ele.classList.add('spinWeelBg_name--mod');
+      ele.style.left = `${randomNumberGenerator(0, 90)}%`;
 
-// spinwheel.style.transform = "rotate(" + value + "deg)";
-// spinwheel.style.transition = "duration(" + value + "s)";
-// value += Math.ceil(Math.random() * 36000);
-// stopbtn.addEventListener('click', () => {
-//   spinbody.classList.add('wu-spin-wheel--stop');
-// })
-// finishbtn.addEventListener('click', () => {
-//   spinbody.classList.remove('wu-spin-wheel--spin');
-//   spinbody.classList.remove('wu-spin-wheel--stop');
-// })
+      // calling function to set position
+      setRandomPosition(ele);
+    }, 0)
 
-//
+    // To set the position of each name
+    function setRandomPosition(ele) {
+      ele.style.setProperty('--anime-top-pos1', randomNumberGenerator(0, 20) + '%');
+      ele.style.setProperty('--anime-top-pos2', randomNumberGenerator(0, 40) + '%');
+      ele.style.setProperty('--anime-top-pos3', randomNumberGenerator(0, 60) + '%');
+      ele.style.setProperty('--anime-top-pos4', randomNumberGenerator(0, 80) + '%');
+      ele.style.setProperty('--anime-top-pos5', randomNumberGenerator(0, 100) + '%');
+    }
 
-function rain() {
-  let amount = 20;
-  let body = document.querySelector('.wu-spin-wheel');
-  let i = 0;
-  while (i < amount) {
-    let drop = document.createElement('i');
-    let pos = Math.floor(Math.random() * window.innerWidth);
-    drop.style.left = pos + 'px';
-    body.appendChild(drop);
-    i++;
-  }
+    // To create a random number b/w min and max
+    function randomNumberGenerator(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    // To create and add element to the body
+    function createNewElement() {
+      const ele = document.createElement('div');
+      ele.classList.add('spinWeelBg_name');
+      ele.textContent = item + "?";
+      spinWeelBg_body.appendChild(ele);
+      return ele;
+    }
+  })
 }
