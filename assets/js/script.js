@@ -50,6 +50,15 @@ tiles.forEach((tile) => {
 
 //
 
-document.querySelector('.wu-spin-wheel__spinwords').innerHTML = document.querySelector('.wu-spin-wheel__spinwords').textContent.replace(/./g, "<span>$&</span>");
-
-let span = document.querySelector('.wu-spin-wheel__spinwords span')
+function rain() {
+  let amount = 20;
+  let body = document.querySelector('.wu-spin-wheel');
+  let i = 0;
+  while (i < amount) {
+    let drop = document.createElement('i');
+    let pos = Math.floor(Math.random() * window.innerWidth);
+    drop.style.left = pos + 'px';
+    body.appendChild(drop);
+    i++;
+  }
+}
