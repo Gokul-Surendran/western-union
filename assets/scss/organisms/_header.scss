@@ -78,6 +78,21 @@
     .navbar-light .navbar-toggler-icon {
       background-image: url("../images/hamburg-black.svg");
     }
+
+    //
+    .wu-header__lang {
+      span {
+        color: $color-black;
+      }
+    }
+
+    .wu-header__langicon {
+      svg {
+        path {
+          fill: $color-black;
+        }
+      }
+    }
   }
 
   &__rightnav {
@@ -92,7 +107,7 @@
 
     span {
       font-size: 20px;
-      color: $color-black;
+      color: $color-white;
     }
   }
 
@@ -106,7 +121,7 @@
       height: 100%;
 
       path {
-        fill: $color-black;
+        fill: $color-white;
       }
     }
   }
@@ -203,14 +218,28 @@
           color: $color-white;
         }
       }
+
+      .wu-header__lang {
+        span {
+          color: $color-yellow;
+        }
+      }
+
+      .wu-header__langicon {
+        svg {
+          path {
+            fill: $color-yellow;
+          }
+        }
+      }
     }
 
     &__lang {
       margin-right: $spacer-3;
 
       span {
-        color: $color-yellow;
         font-size: 20px;
+        color: $color-black;
       }
     }
 
@@ -220,7 +249,7 @@
 
       svg {
         path {
-          fill: $color-yellow;
+          fill: $color-black;
         }
       }
     }
