@@ -1,35 +1,73 @@
-.wu-happiness-rwd{
+.wu-happiness-rwd {
     margin: 32px 0;
-    &__outer{
 
-    }
-    &__imagesec{
-        width: 130px;
-        height: auto;
+    &__imagesec {
+        width: 200px;
+        height: 200px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         display: flex;
+        align-items: center;
         justify-content: center;
-        margin: 0 auto 8px;
-        img{
-            width: 100%;
+        margin: 0 auto 16px;
+        border-radius: 50%;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+        span {
+            font-size: 40px;
+            font-weight: 600;
+            font-family: 'PP Right Grotesk Wide';
+            background: rgb(0, 0, 0);
+            background: linear-gradient(-90deg, rgba(0, 0, 0, 1) 0%, rgba(45, 25, 16, 1) 54%, rgba(60, 33, 21, 1) 100%);
+            background-size: 100%;
+            background-repeat: repeat;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-background-clip: text;
+            -moz-text-fill-color: transparent;
         }
     }
-    &__contentsec{
-    text-align: center;
-    padding-top: 10px;
-    margin: 0 auto;
+
+    &__contentsec {
+        text-align: center;
+        margin: 0 auto;
+        font-size: 22px;
     }
 }
-@include mobile{
-.wu-happiness-rwd{
-    &__contentsec{
-        width: 80%;
+
+@include mobile {
+    .wu-happiness-rwd {
+        &__imagesec {
+            width: 150px;
+            height: 150px;
+
+            span {
+                font-size: 24px;
+            }
+        }
+
+        &__contentsec {
+            width: 80%;
+            font-size: 16px;
+        }
     }
 }
-}
-@include tablet{
-    .wu-happiness-rwd{
-        &__contentsec{
-            width: 78%;
+
+@include tablet {
+    .wu-happiness-rwd {
+        &__imagesec {
+            width: 170px;
+            height: 170px;
+
+            span {
+                font-size: 28px;
+            }
+        }
+
+        &__contentsec {
+            width: 80%;
+            font-size: 18px;
         }
     }
 }
