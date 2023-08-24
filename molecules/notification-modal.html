@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- styles -->
+    <link rel="stylesheet" href="../assets/css/aos.css">
+    <link rel="stylesheet" href="../assets/css/slick.css">
+    <link rel="stylesheet" href="../assets/css/slick-theme.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <!-- styles -->
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- body content start -->
+    <a data-bs-toggle="modal" data-bs-target="#exampleModal"></a>
+    <!-- body content end -->
+    <!-- Modal -->
+    <div class="modal fade wu-modal wu-modal--notifi" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+              <div class="modal-body wu-modal__body">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="wu-modal-left">
+                <h2 class="wu-title">Be the First to Know: Special Offers</h2>
+                <p class="wu-para">Get notified to our exclusive offers and features</p>
+                <button class="wu-btn wu-btn--black" data-bs-dismiss="modal" aria-label="Close">Okay</button>
+              </div>
+              <div class="wu-modal-right">
+                <div class="wu-modal-rightbg desk-visible" style="background-image: url(../assets/images/modal-bg-desk.png);"></div>
+                <div class="wu-modal-rightbg only-mobile" style="background-image: url(../assets/images/modal-bg-mob.png);"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+    <!-- scripts -->
+    <script src="../assets/js/jquery.slim.min.js"></script>
+    <script src="../assets/js/aos.js"></script>
+    <script src="../assets/js/slick.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+    <script type="text/javascript">
+        $(window).on('load', function() {
+            $('#exampleModal').modal('show');
+        });
+    </script>
+    <!-- scripts -->
+  </body>
+</html>

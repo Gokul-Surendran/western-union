@@ -88,12 +88,13 @@
     }
 
     &__iconwrap {
-        display: flex;
+        display: inline-flex;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: center;
+        // justify-content: center;
         margin: 16px auto;
-        width: 85%;
+        // width: 85%;
+        border-bottom: 1px solid #CECECE;
     }
 
     &__icon {
@@ -102,13 +103,29 @@
         display: flex;
         align-items: center;
         margin: 0 $spacer-2 $spacer-2;
-        border: 2px solid $color-yellow;
-        border-radius: 50%;
+        transition: 0.3s;
+
+        // border: 2px solid $color-yellow;
+        // border-radius: 50%;
         // padding: 10px;
+        &:hover {
+            transform: scale(1.1);
+            transition: 0.3s;
+        }
 
         svg {
             width: 100%;
         }
     }
 
+}
+
+@include mobile {
+    .wu-share-modal {
+        &__iconwrap {
+            display: flex;
+            justify-content: center;
+            margin: 16px;
+        }
+    }
 }

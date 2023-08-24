@@ -13,4 +13,131 @@
         }
 
     }
+
+    &--notifi {
+        .modal-dialog {
+            max-width: 800px;
+        }
+
+        .modal-content {
+            border: none;
+            overflow: hidden;
+            border-radius: 5px;
+        }
+
+        .modal-body {
+            display: flex;
+            padding: 0;
+            min-height: 400px;
+            position: relative;
+
+            .btn-close {
+                opacity: 1;
+                position: absolute;
+                right: 16px;
+                top: 16px;
+                z-index: 1;
+                background-image: url("data:image/svg+xml,%3Csvg width='21' height='22' viewBox='0 0 21 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.5 1L0.5 21' stroke='black'/%3E%3Cpath d='M0.499999 1L20.5 21' stroke='black'/%3E%3C/svg%3E%0A");
+
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+        }
+
+        .wu-modal-left,
+        .wu-modal-right {
+            width: 50%;
+        }
+
+        .wu-modal-left {
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+
+            .wu-title {
+                margin-bottom: $spacer-3;
+            }
+
+            .wu-para {
+                font-size: 15px;
+                margin-bottom: $spacer-3;
+            }
+
+            .wu-btn {
+                border: 2px solid $color-yellow;
+            }
+        }
+
+        .wu-modal-right {
+            position: relative;
+        }
+
+        .wu-modal-rightbg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background-position: bottom;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+    }
+}
+
+@include tablet {
+    .wu-modal {
+        &--notifi {
+            .modal-dialog {
+                max-width: 600px;
+            }
+
+            .modal-body {
+                min-height: unset;
+            }
+
+        }
+    }
+}
+
+@include mobile {
+    .wu-modal {
+        &--notifi {
+
+            .modal-body {
+                flex-direction: column-reverse;
+                min-height: unset;
+            }
+
+            .wu-modal-left,
+            .wu-modal-right {
+                width: 100%;
+            }
+
+            .wu-modal-left {
+                padding: 32px;
+                align-items: center;
+                text-align: center;
+
+                .wu-title {
+                    margin-bottom: 10px;
+                    font-size: 24px;
+                }
+
+                .wu-para {
+                    font-size: 14px;
+                    margin-bottom: 10px;
+                }
+            }
+
+            .wu-modal-right {
+                min-height: 200px;
+            }
+
+        }
+    }
 }
