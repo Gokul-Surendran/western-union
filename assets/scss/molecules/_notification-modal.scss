@@ -19,12 +19,16 @@
         flex-direction: column;
         width: 100%;
         pointer-events: auto;
-        background-color: #fff;
+        // background-color: #fff;
         background-clip: padding-box;
         outline: 0;
         border: none;
         overflow: hidden;
         border-radius: 5px;
+
+        .modal-content {
+            overflow: hidden;
+        }
     }
 
     &__body {
