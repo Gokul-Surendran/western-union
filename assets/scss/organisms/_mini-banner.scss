@@ -36,7 +36,7 @@
         transform: translateY(50px);
 
         .wu-title {
-            width: 80%;
+            width: 85%;
             font-size: 45px;
 
             span {
@@ -58,8 +58,25 @@
         }
     }
 
+    &__rightbg {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-width: 300px;
+        min-height: 320px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .wu-title {
+            font-weight: 900;
+            font-size: 45px;
+        }
+    }
+
     &--white {
         .wu-minibanner__right {
+            // min-height: 300px;
 
             img {
                 max-width: 300px;
@@ -97,6 +114,16 @@
             width: 35%;
         }
 
+        &__rightbg {
+            min-width: 210px;
+            min-height: 225px;
+            align-items: center;
+
+            .wu-title {
+                font-size: 30px;
+            }
+        }
+
         &--white {
             .wu-minibanner__right {
                 // transform: translateY(-50px);
@@ -131,6 +158,16 @@
 
             .wu-title {
                 width: 100%;
+                font-size: 25px;
+            }
+        }
+
+        &__rightbg {
+            min-width: 150px;
+            min-height: 160px;
+            align-items: center;
+
+            .wu-title {
                 font-size: 25px;
             }
         }
