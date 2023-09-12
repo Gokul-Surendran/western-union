@@ -24,23 +24,12 @@
             margin-top: 8px;
         }
     }
-
-    &__btn {
-        display: flex;
-        justify-content: center;
-
-        .wu-btn {
-            // width: 100%;
-        }
-    }
 }
 
 @include mobile {
     .wu-qr-referal {
-        &__btn {
-            .wu-btn {
-                width: 100%;
-            }
+        .wu-btn {
+            width: 100%;
         }
     }
 }
