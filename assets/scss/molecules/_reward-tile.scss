@@ -7,24 +7,23 @@
     border-radius: 10px;
     padding: $spacer-3;
     
-    &__digit {
-        color: $color-black;
+    .wu-title {
         text-align: center;
         font-size: 28px;
         font-weight: 900;
     }
 
-        &__subtxt {
-        color: $color-black;
+    .wu-sub-title {
         text-align: center;
         font-size: 16px;
         font-weight: 900;
         margin-bottom: $spacer-3;
+        font-family: "PP Right Grotesk Wide";
     }
 
-        &__discrip {
+    .wu-para {
         color: $color-grey4;
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 400;
         text-align: center;
     }
