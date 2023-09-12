@@ -1,0 +1,46 @@
+.wu-qr-referal {
+    background-color: #D0E1EE;
+    padding: 32px 0;
+
+    .wu-para {
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    &__img {
+        display: flex;
+        justify-content: center;
+        margin: 24px 0;
+    }
+
+    &__icons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .wu-share-modal__iconwrap {
+            border-bottom: 0;
+            margin-top: 8px;
+        }
+    }
+
+    &__btn {
+        display: flex;
+        justify-content: center;
+
+        .wu-btn {
+            // width: 100%;
+        }
+    }
+}
+
+@include mobile {
+    .wu-qr-referal {
+        &__btn {
+            .wu-btn {
+                width: 100%;
+            }
+        }
+    }
+}
