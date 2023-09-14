@@ -33,15 +33,22 @@
         width: 50%;
         display: flex;
         justify-content: center;
+        flex-direction: column;
         transform: translateY(50px);
 
         .wu-title {
-            width: 85%;
+            width: 100%;
             font-size: 45px;
 
             span {
                 font-family: 'PP Eiko';
             }
+        }
+
+        .wu-title__italic {
+            width: 100%;
+            font-size: 45px;
+            font-family: 'PP Eiko';
         }
     }
 
@@ -106,7 +113,11 @@
 
             .wu-title {
                 width: 100%;
-                font-size: 30px;
+                font-size: 35px;
+            }
+
+            .wu-title__italic {
+                font-size: 35px;
             }
         }
 
@@ -158,7 +169,11 @@
 
             .wu-title {
                 width: 100%;
-                font-size: 25px;
+                font-size: 30px;
+            }
+
+            .wu-title__italic {
+                font-size: 30px;
             }
         }
 
