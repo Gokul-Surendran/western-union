@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="ad.size" content="width=200, height=200" />
+    <title>Western Union</title>
+
+    <style type="text/css">
+        :root {
+            --banner-width: 200px;
+            --banner-height: 200px;
+            --btn-width: 105.42px;
+            --btn-height: 16.27px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #e1e1e1;
+            padding: 0;
+            margin: 0;
+            width: var(--banner-width);
+            height: var(--banner-height);
+            position: relative;
+        }
+
+        .container {
+            background-color: #ffffff;
+            width: var(--banner-width);
+            height: var(--banner-height);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .bg {
+            width: var(--banner-width);
+            height: var(--banner-height);
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-image: url('assets/bg.png');
+            background-repeat: no-repeat;
+            background-size: var(--banner-width) var(--banner-height);
+        }
+
+        .banner-link .button {
+            width: var(--btn-width);
+            height: var(--btn-height);
+            position: absolute;
+            left: 47.67px;
+            bottom: 8.10px;
+            background-color: transparent;
+            background-image: url('assets/btn-1.svg');
+            background-repeat: no-repeat;
+            background-size: var(--btn-width) var(--btn-height);
+            z-index: 22;
+        }
+
+        .banner-link:hover .button {
+            background-image: url('assets/btn-2.svg');
+        }
+    </style>
+    <script type="text/javascript">
+        var clickTag = "https://www.cathaypacific.com/";
+    </script>
+</head>
+
+<body>
+    <a class="banner-link" href="javascript:window.open(window.clickTag,'_blank')">
+        <div class="container">
+            <div class="bg"></div>
+            <!-- button -->
+            <div class="button"></div>
+
+        </div>
+    </a>
+</body>
+
+</html>
