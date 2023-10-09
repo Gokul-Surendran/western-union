@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="ad.size" content="width=300, height=600" />
+    <title>Western Union</title>
+
+    <style type="text/css">
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #e1e1e1;
+            padding: 0;
+            margin: 0;
+            width: 300px;
+            height: 600px;
+            position: relative;
+        }
+
+        .container {
+            background-color: #ffffff;
+            width: 300px;
+            height: 600px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .bg {
+            width: 300px;
+            height: 600px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-image: url('assets/bg.png');
+            background-repeat: no-repeat;
+            background-size: 300px 600px;
+        }
+
+        .banner-link .button {
+            width: 219.71px;
+            height: 33.91px;
+            position: absolute;
+            left: 40.1px;
+            bottom: 38px;
+            background-color: transparent;
+            background-image: url('assets/btn-1.svg');
+            background-repeat: no-repeat;
+            background-size: 219.71px 33.91px;
+            z-index: 22;
+        }
+
+        .banner-link:hover .button {
+            background-image: url('assets/btn-2.svg');
+        }
+    </style>
+    <script type="text/javascript">
+        var clickTag = "https://www.cathaypacific.com/";
+    </script>
+</head>
+
+<body>
+    <a class="banner-link" href="javascript:window.open(window.clickTag,'_blank')">
+        <div class="container">
+            <div class="bg"></div>
+            <!-- button -->
+            <div class="button"></div>
+
+        </div>
+    </a>
+</body>
+
+</html>
