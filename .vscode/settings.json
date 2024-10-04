@@ -1,4 +1,5 @@
 {
+<<<<<<< Updated upstream
     "liveSassCompile.settings.formats": [
       {
         "format": "expanded", 
@@ -19,3 +20,25 @@
     "liveSassCompile.settings.showOutputWindowOn": "Error",
     "liveServer.settings.port": 5501,
   }
+=======
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "~/../css",
+    },
+    {
+      "format": "compressed",
+      "extensionName": ".min.css",
+      "savePath": "~/../css",
+    }
+  ],
+  "liveSassCompile.settings.generateMap": false,
+  "liveSassCompile.settings.excludeList": [
+    "/**/node_modules/**",
+    "/.vscode/**"
+  ],
+  "liveSassCompile.settings.showOutputWindowOn": "Error",
+  "liveServer.settings.port": 5502,
+}
+>>>>>>> Stashed changes
