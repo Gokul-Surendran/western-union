@@ -1,0 +1,57 @@
+.wu-lyprgrmform {
+
+    background-color: #ffdd00;
+    height: 100vh;
+
+    &__uppertxt {
+        border: 2px solid #1C334E;
+        font-size: 16px;
+        line-height: 22px;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        background-color: #000;
+        margin-bottom: 20px;
+    }
+
+    &__outer {
+        background-color: #ffdd00;
+    }
+
+    &__txtcontainer {
+        padding: 20px 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        &--b {
+            .wu-lyprgrmform__input {
+                border-radius: unset;
+                border: 1px solid #b8b8b8;
+            }
+        }
+    }
+
+    &__inputhd {
+        font-size: 16px;
+        color: #000;
+        line-height: 22px;
+        padding-bottom: 10px;
+    }
+
+    &__input {
+        padding: 8px;
+        font-size: 14px;
+        color: #000;
+        border-radius: 10px;
+        border: 1px solid #b8b8b8;
+    }
+}
+
+@include mobile {
+    .wu-lyprgrmform {
+        &__txtcontainer {
+            padding: 15px 0px;
+        }
+    }
+}

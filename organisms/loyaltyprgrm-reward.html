@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- styles -->
+    <link rel="stylesheet" href="../assets/css/aos.css">
+    <link rel="stylesheet" href="../assets/css/slick.css">
+    <link rel="stylesheet" href="../assets/css/slick-theme.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link data-react-helmet="true" rel="icon" href="../assets/images/favicon.ico">
+    <!-- styles -->
+    <title>Western Union</title>
+  </head>
+  <body class="wu-loyaltyprgrm_page">
+    <div class="wu-loyaltyprgrm wu-lyrewards">
+      <div class="content-wrapper">
+        <div class="wu-loyaltyprgrm__outer">
+          <h3 class="wu-title text-center">Loyalty Program</h3>
+          <!-- section - 1 -->
+          <div class="wu-loyaltyprgrm__container">
+            <div class="wu-loyaltyprgrm__containerinner">
+              <div href="#" class="wu-lyrewards__subhead">
+                <span>*</span>
+                <a href="#">Terms & Conditions</a>
+              </div>
+              <div class="wu-loyaltyprgrm__containerwrap">
+                <!-- Tile 1 -->
+                <div class="wu-lyrewards__giftwrapouter">
+                  <div class="wu-loyaltyprgrm__giftwrap">
+                    <button type="button" class="loyaltyprgrm__stmpbtn" id="wu-stamppopupa">
+                      <div class="wu-gift">
+                        <div class="wu-gift__top">
+                          <div class="wu-gift__img">
+                            <img src="../assets/images/Gift-loyaltyprgrm.png" alt="" />
+                          </div>
+                        </div>
+                        <div class="wu-gift__cnt">
+                          <div class="wu-gift__title">Stamp for First Transaction</div>
+                          <div class="wu-gift__text">Click on the stamp to redeem</div>
+                        </div>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+                <!-- Tile 2 -->
+                 <div class="wu-lyrewards__giftwrapouter">
+                  <div class="wu-loyaltyprgrm__giftwrap">
+                    <button type="button" class="loyaltyprgrm__stmpbtn" id="wu-stamppopupb">
+                      <div class="wu-gift">
+                        <div class="wu-gift__top">
+                          <div class="wu-gift__img">
+                            <img src="../assets/images/Gift-loyaltyprgrm.png" alt="" />
+                          </div>
+                        </div>
+                        <div class="wu-gift__cnt">
+                          <div class="wu-gift__title">Stamp for First Transaction</div>
+                          <div class="wu-gift__text">Click on the stamp to redeem</div>
+                        </div>
+                      </div>
+                    </button>
+                  </div>
+                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Template (hidden initially) -->
+    <div id="popup1" class="modal" style="display: none;">
+      <div class="modal-content">
+        <p class="modal-bodya">Thanks for your submission.</p>
+        <p class="modal-bodyb">When you make your second transaction, please input the MICN No.</p>
+      </div>
+    </div>
+    <div id="popup2" class="modal" style="display: none;">
+      <div class="modal-content">
+        <p class="modal-bodya">Thanks for your submission.</p>
+        <p class="modal-bodyb">When you make your second transaction, please input the MICN No.</p>
+      </div>
+    </div>
+
+    <script>
+// Function to show the modal below the clicked gift box
+function showModalBelow(giftWrap, modal) {
+        const giftBoxRect = giftWrap.getBoundingClientRect();
+
+        // Adjust the top positioning of the modal to appear below the gift box
+        const topPosition = giftBoxRect.bottom + window.scrollY + 10; // 10px gap from the bottom of the gift box
+
+        modal.style.position = 'absolute';
+        modal.style.top = `${topPosition}px`; // Position below the gift box
+        modal.style.left = `${giftBoxRect.left + window.scrollX}px`; // Align with the left of the gift box
+
+        modal.style.display = 'block'; // Show modal
+      }
+
+      // Function to handle button click and modal behavior
+      document.querySelectorAll('.loyaltyprgrm__stmpbtn').forEach((button) => {
+        button.addEventListener('click', function(event) {
+          event.preventDefault();
+
+          const giftWrap = this.closest('.wu-loyaltyprgrm__giftwrap');
+          const modalId = this.id === 'wu-stamppopupa' ? 'popup1' : 'popup2'; // Determine which popup to show
+          const modal = document.getElementById(modalId);
+
+          // Remove the 'faded' class from all gift wraps
+          document.querySelectorAll('.wu-loyaltyprgrm__giftwrap').forEach((wrap) => {
+            wrap.classList.remove('faded');
+          });
+
+          // Add the 'faded' class to the clicked gift wrap
+          giftWrap.classList.add('faded');
+
+          // Hide other modals before showing the new one
+          document.querySelectorAll('.modal').forEach((m) => {
+            m.style.display = 'none';
+          });
+
+          // Show the modal below the clicked gift box
+          showModalBelow(giftWrap, modal);
+        });
+      });
+
+      // Close modal when clicking outside
+      document.addEventListener('click', (event) => {
+        if (!event.target.closest('.wu-loyaltyprgrm__giftwrap') && !event.target.closest('.modal')) {
+          hideModals();
+        }
+      });
+
+      // Function to hide all modals and reset the 'faded' class
+      function hideModals() {
+        document.querySelectorAll('.modal').forEach((modal) => {
+          modal.style.display = 'none';
+        });
+
+        // Reset 'faded' class when hiding modals
+        document.querySelectorAll('.wu-loyaltyprgrm__giftwrap').forEach((wrap) => {
+          wrap.classList.remove('faded');
+        });
+      }
+    </script>
+
+    <script src="../assets/js/jquery.slim.min.js"></script>
+    <script src="../assets/js/aos.js"></script>
+    <script src="../assets/js/slick.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>
