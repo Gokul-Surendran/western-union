@@ -68,3 +68,41 @@ window.addEventListener('load', () => {
 
 })
 
+
+// wu-loyaltyprogram page script
+// function for pop up and fading
+document.addEventListener('DOMContentLoaded', function () {
+  const sectionOne = document.querySelectorAll('.wu-loyaltyprgrm__containerinner')[0];
+  const sectionTwo = document.querySelectorAll('.wu-loyaltyprgrm__containerinner')[1];
+  
+  
+  function toggleFade(fadedSection, show) {
+    if (show) {
+      fadedSection.classList.add('faded');  
+    } else {
+      fadedSection.classList.remove('faded');  
+    }
+  }
+
+  
+  const modal1 = document.getElementById('wu-lpmodal1');
+  const modal2 = document.getElementById('wu-lpmodal2');
+
+  
+  modal1.addEventListener('show.bs.modal', function () {
+    toggleFade(sectionTwo, true);  
+  });
+  modal1.addEventListener('hidden.bs.modal', function () {
+    toggleFade(sectionTwo, false);  
+  });
+
+  
+  modal2.addEventListener('show.bs.modal', function () {
+    toggleFade(sectionOne, true);  
+  });
+  modal2.addEventListener('hidden.bs.modal', function () {
+    toggleFade(sectionOne, false);  
+  });
+});
+
+

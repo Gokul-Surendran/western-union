@@ -1,4 +1,4 @@
-.loyaltyprgrm {
+.wu-loyaltyprgrm {
     position: relative;
 
     &__outer {
@@ -18,6 +18,51 @@
 
     &__containerwrap {
         display: flex;
+    }
+
+    &__container {
+        position: relative;
+
+        .modal {
+            position: absolute;
+            top: 75px;
+        }
+
+        .modal-content {
+            background-color: #4F81BD;
+        }
+
+        .modal-footer {
+            border-top: unset;
+        }
+
+        .modal-dialog {
+            max-width: 600px;
+            margin: unset;
+        }
+
+        .modal-body {
+            padding: 40px 20px 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            line-height: 22px;
+            text-align: center;
+            background-color: #4F81BD;
+        }
+
+        .modal-footer {
+            padding: 10px 20px 40px 20px;
+            justify-content: space-evenly;
+            background-color: #4F81BD;
+
+            .btn-secondary, .btn-primary {
+                color: #fff;
+                font-size: 16px;
+                background-color: #4F81BD;
+                border: 2px solid #111;
+                width: 150px;
+            }
+        }
     }
 
     &__giftwrap {
@@ -54,14 +99,24 @@
         z-index: 1050; /* Bootstrap modal z-index is 1050 */
     }
 
-    // custom fade areas
+    .faded {
+        opacity: 0.3;  /* Dim the section */
+        pointer-events: none;  /* Disable interactions */
+        transition: opacity 0.3s ease-in-out;
+      }
 
-    #fade-area-1 { top: 10%; height: 30%; width: 100%; }
-    #fade-area-2 { top: 45%; height: 55%; width: 100%; }
+    
 }
 
+    .wu-loyaltyprgrm_page {
+        .modal-backdrop {
+            display: none !important;
+        }
+    }
+
+
 @include mobile {
-    .loyaltyprgrm {
+    .wu-loyaltyprgrm {
         
         .wu-title {
             font-size: 24px;
@@ -75,6 +130,21 @@
 
         &__giftwrap {
             width: 50%;
+        }
+
+        &__container {
+            .modal-footer .btn-secondary, .btn-primary {
+                width: 130px;
+                font-size: 14px;
+            }
+
+            .modal-body {
+                font-size: 14px;
+            }
+
+            .modal {
+                top: 45px;
+            }
         }
     }
 }
