@@ -46,6 +46,25 @@
         border-radius: 10px;
         border: 1px solid #b8b8b8;
     }
+
+    &__btn {
+        color: #ffdd00;
+        background-color: #0a0005;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 10px 40px;
+        margin: 20px 0px 0px 20px;
+        height: 44px;
+        border-radius: 20px;
+        border: 2px solid #1C334E;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+            color: #0a0005;
+            background-color: #ffdd00;
+            border: 2px solid #0a0005;
+        }
+    }
 }
 
 @include mobile {
