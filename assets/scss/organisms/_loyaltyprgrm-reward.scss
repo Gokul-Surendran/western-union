@@ -72,29 +72,10 @@
   }
 }
 
-    #popup1 {
+    #wu-lypopup1 {
         max-width: 280px;
         margin: unset;
-
-        .modal-content {
-            padding: 20px;
-            text-align: center;
-          }
-          
-          .modal-bodya, .modal-bodyb {
-            font-size: 14px;
-            color: #000;
-          }
-        
-          .modal-bodya {
-            padding-bottom: 10px;
-            font-weight: 600;
-          }
-    }
-
-    #popup2 {
-        max-width: 280px;
-        margin: unset;
+        height: auto;
 
         .modal-content {
             padding: 20px;
@@ -113,5 +94,69 @@
           }
     }
 
-    
+    #wu-lypopup2 {
+        max-width: 280px;
+        margin: unset;
+        height: auto;
+
+        .modal-content {
+            padding: 20px;
+            text-align: center;
+            background-color: #f5f5fa;
+          }
+          
+          .modal-bodya, .modal-bodyb {
+            font-size: 14px;
+            color: #000;
+          }
+        
+          .modal-bodya {
+            padding-bottom: 10px;
+            font-weight: 600;
+          }
+    }
+
+    @include tablet-pro {
+      #wu-lypopup1 {
+        max-width: 220px;
+      }
+
+      #wu-lypopup2 {
+        max-width: 220px;
+        left: 285px !important;
+      }
+    }
+
+    @include tablet {
+      #wu-lypopup1 {
+        max-width: 175px;
+      }
+
+      #wu-lypopup2 {
+        max-width: 175px;
+      }
+    }
+
+    @include mobile {
+
+      .wu-lyrewards {
+
+        &__giftwrapouter {
+          width: 50%;
+        }
+
+        &__subhead {
+          font-size: 18px;
+          line-height: 24px;
+        }
+      }
+
+      #wu-lypopup1 {
+        max-width: 44%;
+      }
+
+      #wu-lypopup2 {
+        max-width: 44%;
+      }
+    }
 

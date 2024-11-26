@@ -106,3 +106,65 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+
+// wu-loyalty rewards page
+// Function to show the modal below the clicked gift box
+function showModalBelow(giftWrap, modal) {
+  const giftBoxRect = giftWrap.getBoundingClientRect();
+
+  
+  const topPosition = giftBoxRect.bottom + window.scrollY + 10; 
+
+  modal.style.position = 'absolute';
+  modal.style.top = `${topPosition}px`; 
+  modal.style.left = `${giftBoxRect.left + window.scrollX}px`; 
+
+  modal.style.display = 'block'; 
+}
+
+
+document.querySelectorAll('.loyaltyprgrm__stmpbtn').forEach((button) => {
+  button.addEventListener('click', function(event) {
+    event.preventDefault();
+
+    const giftWrap = this.closest('.wu-loyaltyprgrm__giftwrap');
+    const modalId = this.id === 'wu-stamppopupa' ? 'wu-lypopup1' : 'wu-lypopup2'; 
+    const modal = document.getElementById(modalId);
+
+    
+    document.querySelectorAll('.wu-loyaltyprgrm__giftwrap').forEach((wrap) => {
+      wrap.classList.remove('faded');
+    });
+
+    
+    giftWrap.classList.add('faded');
+
+    
+    document.querySelectorAll('.modal').forEach((m) => {
+      m.style.display = 'none';
+    });
+
+    
+    showModalBelow(giftWrap, modal);
+  });
+});
+
+
+document.addEventListener('click', (event) => {
+  if (!event.target.closest('.wu-loyaltyprgrm__giftwrap') && !event.target.closest('.modal')) {
+    hideModals();
+  }
+});
+
+
+function hideModals() {
+  document.querySelectorAll('.modal').forEach((modal) => {
+    modal.style.display = 'none';
+  });
+
+  
+  document.querySelectorAll('.wu-loyaltyprgrm__giftwrap').forEach((wrap) => {
+    wrap.classList.remove('faded');
+  });
+}
+
