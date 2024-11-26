@@ -34,6 +34,9 @@
 
         .modal-footer {
             border-top: unset;
+            .btn-primary {
+                font-weight: 600;
+            }
         }
 
         .modal-dialog {
@@ -101,7 +104,6 @@
 
     .faded {
         opacity: 0.3;  /* Dim the section */
-        pointer-events: none;  /* Disable interactions */
         transition: opacity 0.3s ease-in-out;
       }
 
@@ -135,7 +137,16 @@
         &__container {
             .modal-footer .btn-secondary, .btn-primary {
                 width: 130px;
+                height: 44px;
                 font-size: 14px;
+            }
+
+            .modal-footer {
+                flex-wrap: nowrap;
+
+                .btn-primary {
+                    font-weight: 600;
+                }
             }
 
             .modal-body {
