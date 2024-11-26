@@ -24,7 +24,6 @@
         }
     }
 
-    /* Ensure modal styling takes precedence */
     .modal {
         display: none;
         position: fixed;
@@ -72,7 +71,7 @@
   }
 }
 
-    #wu-lypopup1 {
+    #wu_lypopup1 {
         max-width: 280px;
         margin: unset;
         height: auto;
@@ -94,7 +93,7 @@
           }
     }
 
-    #wu-lypopup2 {
+    #wu_lypopup2 {
         max-width: 280px;
         margin: unset;
         height: auto;
@@ -117,22 +116,22 @@
     }
 
     @include tablet-pro {
-      #wu-lypopup1 {
+      #wu_lypopup1 {
         max-width: 220px;
       }
 
-      #wu-lypopup2 {
+      #wu_lypopup2 {
         max-width: 220px;
         left: 285px !important;
       }
     }
 
     @include tablet {
-      #wu-lypopup1 {
+      #wu_lypopup1 {
         max-width: 175px;
       }
 
-      #wu-lypopup2 {
+      #wu_lypopup2 {
         max-width: 175px;
       }
     }
@@ -151,11 +150,11 @@
         }
       }
 
-      #wu-lypopup1 {
+      #wu_lypopup1 {
         max-width: 44%;
       }
 
-      #wu-lypopup2 {
+      #wu_lypopup2 {
         max-width: 44%;
       }
     }

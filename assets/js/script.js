@@ -128,7 +128,7 @@ document.querySelectorAll('.loyaltyprgrm__stmpbtn').forEach((button) => {
     event.preventDefault();
 
     const giftWrap = this.closest('.wu-loyaltyprgrm__giftwrap');
-    const modalId = this.id === 'wu-stamppopupa' ? 'wu-lypopup1' : 'wu-lypopup2'; 
+    const modalId = this.id === 'wu-stamppopupa' ? 'wu_lypopup1' : 'wu_lypopup2'; 
     const modal = document.getElementById(modalId);
 
     
