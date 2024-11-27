@@ -107,14 +107,14 @@
         transition: opacity 0.3s ease-in-out;
       }
 
+    #wu-lpmodal1.show ~ .modal-backdrop,
+    #wu-lpmodal2.show ~ .modal-backdrop {
+        display: none !important;
+    }
     
 }
 
-    .wu-loyaltyprgrm_page {
-        .modal-backdrop {
-            display: none !important;
-        }
-    }
+   
 
 
 @include mobile {
