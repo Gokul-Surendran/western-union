@@ -1,10 +1,13 @@
 .wu-lyotp {
+
   background-color: #ffdd00;
   height: 100vh;
   padding: 22px 0;
+
   &__out {
     width: 100%;
   }
+
   &__otphead {
     padding: 10px;
     font-size: 32px;
@@ -15,6 +18,7 @@
     position: relative;
     align-items: center;
   }
+
   &__arrowlogo {
     position: absolute;
     width: 2.5%;
@@ -24,12 +28,14 @@
       width: 100%;
     }
   }
+
   &__h3 {
     padding: 10px;
     font-size: 32px;
     font-weight: bold;
     color: #0a0005;
   }
+
   &__para {
     text-align: center;
     padding-top: 14px;
@@ -40,12 +46,14 @@
     justify-content: center;
     padding-top: 20px;
   }
+
   &__fieldout {
     padding: 20px 20px;
     width: 50%;
     display: flex;
     flex-direction: column;
   }
+
   &__label {
     font-size: 16px;
     color: #000;
@@ -55,6 +63,7 @@
       color: #ff0d00;
     }
   }
+
   &__input {
     padding: 8px;
     font-size: 14px;
@@ -65,6 +74,7 @@
     box-shadow: 0 0 5px rgba(28, 51, 78, 0.5);
     height: 40px;
   }
+
   &__resend {
     text-align: end;
     padding-top: 12px;
@@ -84,67 +94,83 @@
       text-decoration: none;
     }
   }
+
   &_btnout {
     display: flex;
     justify-content: center;
 
     .wu-btns {
-      width: 47%;
+      width: 20%;
     }
+
     .wu-btns__inner {
       width: 100%;
     }
   }
+
 }
 
 @include tablet-pro {
   .wu-lyotp {
+
     &__fieldout {
       width: 52%;
     }
+
     &__resend {
       &::after {
         width: 20%;
       }
     }
+
   }
 }
 
 @include tablet {
   .wu-lyotp {
+
     &__arrorlogo {
       width: 3.5%;
       left: 24%;
     }
+    
     &__fieldout {
       width: 56%;
     }
+
     &__resend {
       &::after {
         width: 26%;
       }
     }
+
   }
 }
 @include mobile {
   .wu-lyotp {
+
     &__arrowlogo {
       width: 6.5%;
       left: 4%;
     }
+
     &__fieldout {
       width: 100%;
+      padding: 20px 0px;
     }
+
     &__resend {
       &::after {
         width: 26%;
       }
     }
+
     &_btnout {
   
       .wu-btns {
-        width: 90%;
+        width: 100%;
       }
     }
+
   }
 }
