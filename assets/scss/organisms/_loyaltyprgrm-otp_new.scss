@@ -1,0 +1,150 @@
+.wu-lyotp {
+  background-color: #ffdd00;
+  height: 100vh;
+  padding: 22px 0;
+  &__out {
+    width: 100%;
+  }
+  &__otphead {
+    padding: 10px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #0a0005;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+  }
+  &__arrowlogo {
+    position: absolute;
+    width: 2.5%;
+    top: 25%;
+    left: 27%;
+    img {
+      width: 100%;
+    }
+  }
+  &__h3 {
+    padding: 10px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #0a0005;
+  }
+  &__para {
+    text-align: center;
+    padding-top: 14px;
+  }
+
+  &__field {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+  }
+  &__fieldout {
+    padding: 20px 20px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+  &__label {
+    font-size: 16px;
+    color: #000;
+    line-height: 22px;
+    padding-bottom: 10px;
+    span {
+      color: #ff0d00;
+    }
+  }
+  &__input {
+    padding: 8px;
+    font-size: 14px;
+    color: #000;
+    border-radius: 10px;
+    border: 1px solid #b8b8b8;
+    width: 100%;
+    box-shadow: 0 0 5px rgba(28, 51, 78, 0.5);
+    height: 40px;
+  }
+  &__resend {
+    text-align: end;
+    padding-top: 12px;
+    color: #000;
+    font-size: 16px;
+    position: relative;
+    text-decoration: underline;
+    // &::after {
+    //   content: "";
+    //   position: absolute;
+    //   border-bottom: 2px solid #000;
+    //   bottom: 0px;
+    //   right: 0;
+    // }
+    &:hover {
+      color: #000;
+      text-decoration: none;
+    }
+  }
+  &_btnout {
+    display: flex;
+    justify-content: center;
+
+    .wu-btns {
+      width: 47%;
+    }
+    .wu-btns__inner {
+      width: 100%;
+    }
+  }
+}
+
+@include tablet-pro {
+  .wu-lyotp {
+    &__fieldout {
+      width: 52%;
+    }
+    &__resend {
+      &::after {
+        width: 20%;
+      }
+    }
+  }
+}
+
+@include tablet {
+  .wu-lyotp {
+    &__arrorlogo {
+      width: 3.5%;
+      left: 24%;
+    }
+    &__fieldout {
+      width: 56%;
+    }
+    &__resend {
+      &::after {
+        width: 26%;
+      }
+    }
+  }
+}
+@include mobile {
+  .wu-lyotp {
+    &__arrowlogo {
+      width: 6.5%;
+      left: 4%;
+    }
+    &__fieldout {
+      width: 100%;
+    }
+    &__resend {
+      &::after {
+        width: 26%;
+      }
+    }
+    &_btnout {
+  
+      .wu-btns {
+        width: 90%;
+      }
+    }
+  }
+}
