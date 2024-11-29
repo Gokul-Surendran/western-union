@@ -1,0 +1,43 @@
+.wu-btns {
+
+    &__inner {
+        color: #ffdd00;
+        background-color: #0a0005;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 10px 40px;
+        height: 44px;
+        border-radius: 20px;
+        border: 2px solid #1C334E;
+        transition: 0.3s ease-in-out;
+        box-shadow: 0 0 5px rgba(28, 51, 78, 0.5);
+
+        &:hover {
+            color: #0a0005;
+            background-color: #ffdd00;
+            border: 2px solid #0a0005;
+        }
+
+    }
+
+    &--ylw {
+        .wu-btns__inner {
+            color: #000;
+            background-color: #ffdd00;
+            font-size: 16px;
+            font-weight: 600;
+            padding: 10px 40px;
+            height: 44px;
+            border-radius: 20px;
+            border: 2px solid #ffdd00;
+            transition: 0.3s ease-in-out;
+            box-shadow: 0 0 5px rgba(28, 51, 78, 0.5);
+
+            &:hover {
+                color: #ffdd00;
+                background-color: #000;
+                border: 2px solid #ffdd00;
+            }
+        }
+    }
+}

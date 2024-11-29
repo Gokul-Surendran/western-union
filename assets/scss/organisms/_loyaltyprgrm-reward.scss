@@ -1,0 +1,92 @@
+.wu-lyrewards {
+
+  .faded {
+    opacity: 0.4;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+  }
+
+  .wu-title {
+    margin-bottom: 30px;
+  }
+
+  &__outer {
+    margin: 30px 0px;
+  }
+
+    &__subhead {
+        font-size: 22px;
+        color: #5395FC;
+        line-height: 28px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #dfdddf;
+        text-decoration: none;
+        display: inline-block;
+        width: 100%;
+
+        span {
+            color: #000;
+        }
+    }
+
+    &__giftwrapouter {
+      width: calc(25% - 15px);
+      margin: 8px;
+    }
+
+    &__giftwrap {
+      width: 100%;
+      padding: 20px 10px 0px;
+      border: 1px solid #dadada;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 2px;
+  }
+
+    &__containerwrap {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 25px 0px;
+    }
+
+    &__containerinner {
+      padding: 25px 0px;
+    }
+
+  }
+ 
+    @include tablet-pro {
+      .wu-lyrewards {
+        &__giftwrapouter {
+          width: calc(30% - 15px);
+        }
+      }
+    }
+
+    @include tablet {
+      .wu-lyrewards {
+        &__giftwrapouter {
+          width: calc(30% - 15px);
+        }
+      }
+    }
+
+    @include mobile {
+
+      .wu-lyrewards {
+
+        &__giftwrapouter {
+          width: 70%;
+        }
+
+        &__containerwrap {
+          justify-content: center;
+        }
+
+        &__subhead {
+          font-size: 18px;
+          line-height: 24px;
+        }
+      }
+    
+    }
+

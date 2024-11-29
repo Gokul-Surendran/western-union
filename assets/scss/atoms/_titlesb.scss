@@ -1,0 +1,59 @@
+.wu-cmptitle {
+    font-size: 28px;
+    font-family: 'PP Right Grotesk Wide';
+    font-weight: 600;
+    color: #000;
+    text-decoration: none;
+}
+
+.wu-sub-cmptitle {
+    font-size: 22px;
+    font-weight: 500;
+    color: #000;
+    text-decoration: none;
+}
+
+.wu-cmppara {
+    font-size: 18px;
+
+    span {
+        font-weight: 300;
+    }
+}
+
+.wu-cmp-bckbtntitle {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &__img {
+        width: 3%;
+        position: absolute;
+        top: 4px;
+        left: 35%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__title {
+        font-size: 28px;
+        font-family: 'PP Right Grotesk Wide';
+        font-weight: 600;
+        color: #000;
+        text-decoration: none;
+        padding-left: 20px;
+        text-align: center;
+    }
+}
+
+@include mobile {
+    .wu-sub-cmptitle {
+        font-size: 20px;
+    }
+
+    .wu-cmppara {
+        font-size: 14px;
+    }
+}

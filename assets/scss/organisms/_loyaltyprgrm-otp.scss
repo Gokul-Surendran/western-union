@@ -1,0 +1,184 @@
+.wu-loyaltyotp {
+    height: 100vh;
+    background-color: #F0F0F0;
+
+    &__outera {
+        background-color: #ffffff;
+        padding: 20px 0px 30px 0px;
+        margin-top: 30px;
+    }
+
+    &__container {
+        text-align: center;
+    }
+
+    .wu-cmp-bckbtntitle {
+        justify-content: center;
+        padding-bottom: 30px;
+
+        .wu-cmp-bckbtntitle__img {
+            width: 2.5%;
+            top: 3%;
+        }
+    }
+
+    &__input {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+
+        input {
+            width: 50px;
+            height: 50px;
+            margin: 0 5px;
+            text-align: center;
+            font-size: 24px;
+            border-top: unset;
+            border-right: unset;
+            border-left: unset;
+            border-bottom: 3px solid #9d9d9d;
+            outline: none;
+
+            &::placeholder {
+                color: #9d9d9d;
+                font-weight: 600;
+                font-size: 38px;
+                line-height: 44px;
+            }
+        }
+    }
+
+    &__resendtxt {
+        color: #000;
+        cursor: pointer;
+        font-weight: bold;
+        position: relative;
+
+        &:hover {
+            color: #000;
+        }
+
+        &::after {
+            content: " ";
+            position: absolute;
+            height: 2px;
+            bottom: 0px;
+            background-color: #9d9d9d;
+            width: 100%;
+            left: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        &:hover::after {
+            opacity: 0;
+        }
+
+    }
+
+    &__outerb {
+        background-color: #F0F0F0;
+        padding: 20px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px -7px 10px -6px,     
+                    rgba(0, 0, 0, 0.04) -30px -11px 0px -38px; 
+    }
+
+    &__keypad {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        width: 30%;
+        margin: 20px auto;
+
+        button {
+            height: 50px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            background-color: #fff;
+            cursor: pointer;
+            box-shadow: rgba(0, 0, 0, 0.15) 0.0px 1.90px 0.5px;
+        }
+    }
+
+    .wu-btns {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        .wu-btns__inner {
+            width: 30%;
+        }
+    }
+}
+
+@include tablet-pro {
+
+    .wu-loyaltyotp {
+
+        .wu-cmp-bckbtntitle .wu-cmp-bckbtntitle__img {
+            left: 30%;
+        }
+
+        &__keypad {
+            width: 40%;
+        }
+
+        .wu-btns  {
+            padding-top: 15px;
+            .wu-btns__inner {
+                width: 40%;
+            }
+        }
+    }
+}
+
+
+@include tablet {
+
+    .wu-loyaltyotp {
+
+        .wu-cmp-bckbtntitle .wu-cmp-bckbtntitle__img {
+            left: 26%;
+        }
+
+        &__keypad {
+            width: 50%;
+        }
+
+        .wu-btns  {
+            padding-top: 15px;
+            .wu-btns__inner {
+                width: 50%;
+            }
+        }
+    }
+}
+
+
+@include mobile {
+    .wu-loyaltyotp {
+
+        &__keypad {
+            width: 100%;
+        }
+
+        &__outerb {
+            padding: 10px;
+        }
+
+        .wu-btns  {
+            padding-top: 15px;
+            .wu-btns__inner {
+                width: 100%;
+            }
+        }
+       
+        .wu-cmp-bckbtntitle {
+            .wu-cmp-bckbtntitle__img {
+                width: 8%;
+                top: 3%;
+                left: 5%;
+            }
+        }
+    }
+}

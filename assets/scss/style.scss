@@ -14,7 +14,9 @@
 @import "./atoms/input";
 @import "./atoms/checkbox";
 @import "./atoms/titles";
-@import "./atoms/countrycode-select";
+@import "./atoms/titlesb";
+@import "./atoms/buttonsb";
+
 
 // molecule
 @import "./molecules/coupon";
@@ -26,6 +28,7 @@
 @import "./molecules/notification-modal";
 @import "./molecules/referal-tile";
 @import "./molecules/reward-tile";
+@import "./molecules/giftstamp-tile";
 
 // organisms
 @import "./organisms/welcome";
@@ -48,6 +51,7 @@
 @import "./organisms/loyaltyprgrm";
 @import "./organisms/loyaltyprgrm-form";
 @import "./organisms/loyaltyprgrm-reward";
+@import "./organisms/loyaltyprgrm-otp";
 
 
 // pages
