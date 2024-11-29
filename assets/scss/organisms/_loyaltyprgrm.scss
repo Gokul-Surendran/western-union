@@ -4,6 +4,12 @@
     background-color: #f5f5fa;
     margin-bottom: 30px;
 
+    .faded {
+        opacity: 0.4;
+        pointer-events: none;
+        transition: opacity 0.5s ease;
+      }
+
     &__titleouter {
         background-color: #fff;
     }
