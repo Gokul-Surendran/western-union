@@ -105,6 +105,8 @@
 
     .wu-btns__inner {
       width: 100%;
+      display: inline-block;
+      text-align: center;
     }
   }
 
@@ -152,6 +154,10 @@
     &__arrowlogo {
       width: 6.5%;
       left: 4%;
+    }
+
+    &__para {
+      text-align: left;
     }
 
     &__fieldout {

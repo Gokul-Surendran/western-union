@@ -86,8 +86,14 @@
     }
 
     &__modal {
-        top: 20%;
-        left: 2%;
+        top: 0;
+        left: 0;
+
+        .modal-dialog {
+            display: flex;
+            justify-content: center;
+            top: 25%;
+        }
 
         .modal-content {
             border-radius: 10px;
@@ -219,7 +225,7 @@
         }
 
         &__modal {
-            left: 5%;
+            left: 0%;
             top: 7%;
         }
 
@@ -274,7 +280,7 @@
 
         &__modal {
 
-            left: 5%;
+            left: 0%;
 
             .modal-content {
                 width: 90%;
