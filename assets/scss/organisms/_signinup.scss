@@ -95,6 +95,9 @@
    .wu-footer {
       margin-top: -$spacer-3;
    }
+
+   
+
 }
 
 @include tablet {
@@ -146,5 +149,15 @@
       //    width: 100%;
       //    margin-top: $spacer-4;
       // }
+
+      &.wu-lp_signup {
+         .wu-btns__inner {
+            width: 100%;
+         }
+
+         .wu-btns {
+            padding-top: 25px;
+         }
+      }
    }
 }
