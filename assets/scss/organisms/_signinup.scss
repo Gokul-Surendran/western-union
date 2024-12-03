@@ -100,10 +100,26 @@
 
 }
 
+@include tablet-pro {
+   .wu-signinup {
+      .wu-title {
+         font-size: 42px;
+      }
+   }
+}
+
 @include tablet {
    .wu-signinup {
       &__form {
          max-width: 300px;
+      }
+
+      &__wrap {
+         width: 70%;
+      }
+
+      .wu-title {
+         font-size: 32px;
       }
    }
 }

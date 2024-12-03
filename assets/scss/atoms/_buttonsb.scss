@@ -7,7 +7,7 @@
         font-weight: 600;
         padding: 10px 40px;
         border-radius: 20px;
-        border: 2px solid #1C334E;
+        border: 2px solid #000;
         transition: 0.3s ease-in-out;
         box-shadow: 0 0 5px rgba(28, 51, 78, 0.5);
 
@@ -15,6 +15,19 @@
             color: #0a0005;
             background-color: #ffdd00;
             border: 2px solid #0a0005;
+        }
+
+        &--ylw {
+            background-color: #ffdd00;
+            color: #000;
+            border: 2px solid #000;
+            transition: 0.3s ease-in-out;
+
+            &:hover {
+                background-color: #000;
+                color: #ffdd00;
+                border: 2px solid #ffdd00;
+            }
         }
 
     }
