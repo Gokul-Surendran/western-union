@@ -3,7 +3,7 @@
     background-color: #ffdd00;
 
     &__bg {
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         width: 100%;
@@ -93,7 +93,8 @@
 @include tablet-pro {
     .wu-detailspg {
         &__bg {
-            height: 100%;
+            min-height: 100%;
+            position: absolute;
         }
 
         &__dtlstxt {
@@ -114,6 +115,10 @@
 
 @include tablet {
     .wu-detailspg  {
+
+        &__bg {
+            position: absolute;
+        }
 
         &__wrap {
             width: 75%;
