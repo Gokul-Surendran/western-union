@@ -19,6 +19,21 @@
             font-size: 16px;
             color: #000;
         }
+
+        &.blulnk {
+            a {
+                color: #0563C1;
+            }
+        }
+
+        .hyplnk {
+            color: #0563C1;
+            text-decoration: underline;
+
+            &:hover {
+                text-decoration: unset;
+            }
+        }
     }
 
     &__head {
@@ -35,5 +50,59 @@
         line-height: 22px;
         padding-bottom: 15px;
         text-decoration: underline;
+    }
+
+    &__linkhd {
+        font-size: 18px;
+        line-height: 22px;
+        color: #0563C1;
+        padding-bottom: 15px;
+        text-decoration: underline;
+        &:hover {
+            text-decoration: unset;
+        }
+    }
+
+    &__lista {
+        padding-left: 30px;
+    }
+
+    &__listb {
+        padding-left: 30px;
+    }
+
+    &__listaitm {
+        list-style-type: none;
+        color: #000;
+        margin-bottom: 15px;
+        padding-left: 20px;
+        font-size: 16px;
+        position: relative;
+        margin-left: 6px;
+
+        .bld {
+            font-weight: 600;
+            padding-right: 6px;
+        }
+
+        &::before {
+            content: "";
+            background-color: #000;
+            display: inline-block;
+            min-width: 8px;
+            min-height: 8px;
+            border-radius: 50%;
+            margin-right: 15px;
+            position: absolute;
+            top: 6px;
+            left: 0px;
+        }
+    }
+
+    &__listbitm {
+        margin-bottom: 15px;
+        color: #000;
+        font-size: 16px;
+        list-style-type: none;
     }
 }
