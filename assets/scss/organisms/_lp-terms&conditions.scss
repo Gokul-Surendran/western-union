@@ -11,16 +11,22 @@
             font-size: 16px;
             color: #000;
             line-height: 20px;
-            padding-bottom: 15px;
+            padding-bottom: 20px;
         }
 
         span {
             padding-right: 8px;
         }
+
+        a {
+            color: #000;
+            font-size: 16px;
+            line-height: 20px;
+        }
     }
 
     &__termlista {
-        padding: 10px 0px 10px 30px;
+        padding: 10px 0px 15px 30px;
     }
 
     &__termlistitm {
@@ -76,6 +82,19 @@
             position: absolute;
             top: 6px;
             left: 0px;
+        }
+    }
+}
+
+@include mobile {
+    .wu-lpterms {
+
+        &__termlista {
+            padding: 10px 0px 15px 20px;
+        }
+
+        &__termlistb {
+            padding: 10px 0px 10px 50px;
         }
     }
 }
