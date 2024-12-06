@@ -54,7 +54,7 @@
     &__cntrysec {
         .wu-title {
             padding-bottom: 15px;
-            font-size: 30px;
+            font-size: 35px;
         }
 
         .row {
@@ -68,7 +68,7 @@
         .checkboxlistformat {
 
             input[type=checkbox]:not(:checked){
-                        background-color: #f0f0f0;  /* Example: Light background for unchecked */
+                        background-color: #ffdd00;  /* Example: Light background for unchecked */
                     }
         }
     }
@@ -102,7 +102,7 @@
             border-radius: unset;
             width: 15px;
             height: 15px;
-            background-color: #fff;
+            background-color: #ffdd00;
         }
 
         label {
@@ -173,6 +173,10 @@
 
         &__cntrysec {
             padding: 0px 20px;
+
+            .wu-title {
+                font-size: 30px;
+            }
         }
     }
 }

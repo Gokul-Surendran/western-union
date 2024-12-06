@@ -56,6 +56,15 @@
    &__form {
       width: 100%;
       max-width: 450px;
+
+      .wu-title {
+         font-size: 35px;
+         margin-bottom: 10px;
+      }
+
+      .wu-inpwrap {
+         margin: 24px 0 10px 0px;
+      }
    }
 
    &__act {
@@ -159,6 +168,10 @@
 
       &__form {
          padding: $spacer-0 $spacer-3;
+
+         .wu-title {
+            color: #000;
+         }
       }
 
       // .mo-btn {
@@ -184,6 +197,14 @@
          }
 
          .wu-signinup__wrap {
+            width: 100%;
+         }
+      }
+
+      &__act {
+         justify-content: center;
+         
+         .wu-btn {
             width: 100%;
          }
       }

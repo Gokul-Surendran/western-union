@@ -49,6 +49,14 @@
       padding: 20px 10px 0px;
       border: 1px solid #dadada;
       box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 2px;
+
+      .wu-giftstamp__img {
+        background-color: #94CBF2;
+      }
+
+      .wu-giftstamp__loader::after, .wu-giftstamp__loader::before {
+        background: #94CBF2;
+      }
   }
 
     &__containerwrap {
