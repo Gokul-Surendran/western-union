@@ -5,6 +5,8 @@
 
     &__uppertxtouter {
         width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
     &__uppertxt {
@@ -15,9 +17,9 @@
         padding: 20px;
         margin-bottom: 20px;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         text-align: left;
-        width: 95%;
+        width: 50%;
     }
 
     &__outer {
