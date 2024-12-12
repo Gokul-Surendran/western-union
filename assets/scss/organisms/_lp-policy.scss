@@ -23,6 +23,11 @@
         &.blulnk {
             a {
                 color: #0563C1;
+                text-decoration: underline;
+                transform: 0.3s ease-in-out;
+                &:hover {
+                    text-decoration: none;
+                }
             }
         }
 
