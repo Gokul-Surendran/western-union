@@ -31,5 +31,19 @@
    //    color: rgba(157, 157, 157, 1);
    //    pointer-events: none;
    // }
+
+   &__lblout {
+      padding-bottom: 10px;
+
+      &__lbl {
+         font-size: 16px;
+         color: #000;
+      }
+
+      &__lblstr {
+         padding-left: 4px;
+         color: #FF0D00;
+      }
+   }
 }
 

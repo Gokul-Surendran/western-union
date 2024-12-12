@@ -7,7 +7,7 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 100vh;
+        min-height: 100%;
         overflow: hidden;
         background-position: center;
         background-repeat: no-repeat;
@@ -26,8 +26,11 @@
         .wu-btns {
             padding: 25px 0px 20px 0px;
             display: flex;
-            width: 62%;
-            justify-content: space-between;
+            width: 100%;
+
+            .wu-btns__inner--ylw {
+                margin-right: 30px;
+            }
         }
     }
 
@@ -118,6 +121,7 @@
 
         &__bg {
             position: absolute;
+            height: 100vh;
         }
 
         &__wrap {
@@ -125,12 +129,18 @@
         }
 
         &__dtlstxt {
-            width: 65%;
+            width: 55%;
         }
 
         .wu-btns {
+            padding: 25px 0px 20px 0px;
+
             &__inner {
                 padding: 8px 35px;
+            }
+
+            .wu-btns__inner--ylw {
+                margin-right: 15px;
             }
         }
     }
@@ -176,8 +186,16 @@
         }
 
         .wu-btns {
-            width: 100%;
-            justify-content: space-evenly;
+            padding: 25px 20px;
+            width: 100%; 
+
+            .wu-btns__inner {
+                padding: 10px 20px;
+            }
+
+            .wu-btns__inner--ylw {
+                margin-right: 20px;
+            }
         }
     }
 }

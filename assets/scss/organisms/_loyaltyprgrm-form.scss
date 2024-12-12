@@ -50,15 +50,19 @@
         }
     }
 
+    &__inputhdwrap {
+        padding-bottom: 10px;
+    }
+
     &__inputhd {
         font-size: 16px;
         color: #000;
         line-height: 22px;
-        padding-bottom: 10px;
+    }
 
-        span {
-            color: #FF0D00;
-        }
+    &__inputstr {
+        color: #FF0D00;
+        padding-left: 4px;
     }
 
     &__input {
