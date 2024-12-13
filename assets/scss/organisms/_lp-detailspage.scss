@@ -134,7 +134,9 @@
 
         .wu-btns {
             padding: 25px 0px 20px 0px;
-
+            flex-direction: column-reverse;
+            align-items: flex-start;
+            gap: 10px;
             &__inner {
                 padding: 8px 35px;
             }
