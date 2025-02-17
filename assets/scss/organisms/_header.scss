@@ -125,10 +125,18 @@
       }
     }
   }
+
+  .wu-morelang {
+    display: flex;
+  }
 }
 
 @include mobile-tablet {
   .wu-header {
+
+    .container-fluid {
+      flex-direction: row-reverse;
+    }
     .navbar {
       padding: $spacer-5 $spacer-0;
     }
@@ -157,7 +165,8 @@
     }
 
     &__lang {
-      margin-right: $spacer-3;
+      margin-right: 0;
+      margin-left: 6px;
 
       span {
         font-size: 25px;
@@ -184,6 +193,9 @@
 
 @include mobile {
   .wu-header {
+    .container-fluid {
+      flex-direction: row-reverse;
+    }
     background-color: $color-grey2;
 
     .navbar {
@@ -191,7 +203,7 @@
     }
 
     &__logo {
-      max-width: 65px !important;
+      max-width: 50px !important;
     }
 
     .navbar-light .navbar-toggler-icon {
@@ -235,7 +247,7 @@
     }
 
     &__lang {
-      margin-right: $spacer-3;
+      margin-right: 0;
 
       span {
         font-size: 20px;
