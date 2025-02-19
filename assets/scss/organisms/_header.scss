@@ -98,6 +98,13 @@
   &__rightnav {
     display: flex;
     align-items: center;
+
+    a {
+      display: flex;
+      align-items: center;
+      gap: 0px;
+      margin-right: 5px;
+    }
   }
 
   &__lang {
@@ -113,9 +120,9 @@
 
   &__langicon {
     width: 25px;
-    height: 25px;
+    height: auto;
     margin-right: $spacer-1;
-
+    margin-bottom: 4px;
     svg {
       width: 100%;
       height: 100%;
@@ -133,9 +140,8 @@
 
 @include mobile-tablet {
   .wu-header {
-
     .container-fluid {
-      flex-direction: row-reverse;
+      flex-direction: row;
     }
     .navbar {
       padding: $spacer-5 $spacer-0;
@@ -186,7 +192,6 @@
       .navbar-collapse {
         order: 3;
       }
-
     }
   }
 }
@@ -194,7 +199,7 @@
 @include mobile {
   .wu-header {
     .container-fluid {
-      flex-direction: row-reverse;
+      flex-direction: row;
     }
     background-color: $color-grey2;
 
@@ -257,8 +262,8 @@
 
     &__langicon {
       width: 22px;
-      height: 22px;
-
+      height: auto;
+      margin-bottom: 4px;
       svg {
         path {
           fill: $color-black;
