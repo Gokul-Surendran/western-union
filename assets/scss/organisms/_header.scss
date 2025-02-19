@@ -104,6 +104,7 @@
       align-items: center;
       gap: 0px;
       margin-right: 5px;
+      color: #000 !important;
     }
   }
 
@@ -135,6 +136,17 @@
 
   .wu-morelang {
     display: flex;
+  }
+}
+
+@include tablet {
+  .wu-header {
+    &__rightnav {
+
+      a {
+        font-size: 16px;
+      }
+    }
   }
 }
 
@@ -257,6 +269,15 @@
       span {
         font-size: 20px;
         color: $color-black;
+      }
+    }
+
+    &__rightnav {
+
+      a {
+        color: #fff !important;
+        font-size: 11px;
+        margin-right: 2px;
       }
     }
 
